@@ -2,7 +2,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    # ./mounts-pc.nix  # Uncomment when mounts file exists
+    ./mounts-pc.nix
   ];
 
   # AMD GPU kernel params
