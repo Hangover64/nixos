@@ -15,6 +15,13 @@
       eval "$(starship init bash)"
     '';
   };
+  programs.fish = {
+  enable = true;
+  interactiveShellInit = ''
+    starship init fish | source
+    fish_config theme choose "Dracula Official"
+  '';
+};
 
   programs.alacritty.enable = true;
 
@@ -66,7 +73,6 @@
   xdg.configFile."alacritty".source = ../dotfiles/alacritty;
   xdg.configFile."zed".source = ../dotfiles/zed;
   xdg.configFile."waybar".source = ../dotfiles/waybar;
-  xdg.configFile."fish".source = ../dotfiles/fish;
   xdg.configFile."swaync".source = ../dotfiles/swaync;
   xdg.configFile."yazi".source = ../dotfiles/yazi;
   xdg.configFile."wofi".source = ../dotfiles/wofi;
