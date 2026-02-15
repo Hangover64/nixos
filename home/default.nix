@@ -8,13 +8,6 @@
     ./hyprland.nix
     ./hypr-extras.nix
   ];
-
-  # Unfree
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowUnfreePredicate = (_: true);
-  };
-
   # Shell
   programs.bash = {
     enable = true;
