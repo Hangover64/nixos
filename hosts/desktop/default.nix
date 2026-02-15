@@ -27,9 +27,6 @@
     razer-cli
   ];
 
-  # VirtualBox
-  boot.kernelModules = [ "vboxdrv" "vboxnetadp" "vboxnetflt" ];
-  virtualisation.virtualbox.host.enable = true;
 
   # Peripherals
   programs.coolercontrol.enable = true;
