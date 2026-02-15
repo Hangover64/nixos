@@ -88,8 +88,10 @@
   programs.git = {
     enable = true;
     settings = {
-    userName = "Hangover64";
-    userEmail = "hendrikfarnkopf@pm.me";
+      user = {
+      name = "Hangover64";
+      email = "hendrikfarnkopf@pm.me";
+      };
     };
   };
 
@@ -142,7 +144,7 @@
     coolercontrol.coolercontrol-ui-data
 
     #Jetbrains
-    jetbrains.idea-ultimate
+    jetbrains.idea
     jetbrains.rust-rover
     jetbrains.ruby-mine
     jetbrains.webstorm
