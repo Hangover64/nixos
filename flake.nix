@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, caelestia-shell ... }@inputs:
+  outputs = { self, nixpkgs, caelestia-shell, ... }@inputs:
   let
     commonModules = [
       ./modules/common.nix
