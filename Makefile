@@ -1,5 +1,5 @@
 desktop:
-	nixos-rebuild switch --flake ~/nixos#desktop
+	sudo nixos-rebuild switch --flake ~/nixos#desktop
 
 laptop:
-	nixos-rebuild switch --flake ~/nixos#laptop
+	sudo nixos-rebuild switch --flake ~/nixos#laptop
