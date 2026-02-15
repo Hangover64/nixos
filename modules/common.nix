@@ -38,6 +38,8 @@
   };
 
   home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
     extraSpecialArgs = { inherit inputs hostSettings; };
     users."hendrikf" = import ../home;
   };
