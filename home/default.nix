@@ -87,8 +87,10 @@
   # Git
   programs.git = {
     enable = true;
+    settings = {
     userName = "Hangover64";
     userEmail = "hendrikfarnkopf@pm.me";
+    };
   };
 
   # Packages
@@ -138,6 +140,12 @@
     coolercontrol.coolercontrold
     coolercontrol.coolercontrol-gui
     coolercontrol.coolercontrol-ui-data
+
+    #Jetbrains
+    jetbrains.idea-ultimate
+    jetbrains.rust-rover
+    jetbrains.ruby-mine
+    jetbrains.webstorm
   ];
 
   fonts.fontconfig.enable = true;
