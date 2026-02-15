@@ -36,7 +36,6 @@
         "col.inactive_border" = "rgba(44475aaa)";
         "col.nogroup_border" = "rgba(282a36dd)";
         "col.nogroup_border_active" = "rgb(bd93f9) rgb(44475a) 90deg";
-        no_border_on_floating = false;
         resize_on_border = false;
         allow_tearing = false;
         layout = "dwindle";
@@ -215,8 +214,8 @@
 
       # Window rules
       windowrule = [
-        "suppressevent maximize, class:.*"
-        "nofocus, class:^$, title:^$, xwayland:1, floating:1, fullscreen:0, pinned:0"
+        "suppressevent, maximize, class:.*"
+        "nofocus:1, class:^$, title:^$, xwayland:1, floating:1, fullscreen:0, pinned:0"
       ];
     };
   };
