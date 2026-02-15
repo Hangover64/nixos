@@ -142,7 +142,7 @@
     coolercontrol.coolercontrol-ui-data
 
     #Jetbrains
-    jetbrains.idea-ultimate
+    jetbrains.idea
     jetbrains.rust-rover
     jetbrains.ruby-mine
     jetbrains.webstorm
