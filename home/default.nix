@@ -76,6 +76,7 @@
   xdg.configFile."swaync".source = ../dotfiles/swaync;
   xdg.configFile."yazi".source = ../dotfiles/yazi;
   xdg.configFile."wofi".source = ../dotfiles/wofi;
+  xdg.configFile."fish/config.fish".force=true;
 
   # Starship
   programs.starship = {
