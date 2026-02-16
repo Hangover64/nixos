@@ -149,6 +149,9 @@
     jetbrains.rust-rover
     jetbrains.ruby-mine
     jetbrains.webstorm
+
+    #cli
+    ani-cli
   ];
 
   fonts.fontconfig.enable = true;
