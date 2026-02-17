@@ -76,6 +76,7 @@
   xdg.configFile."swaync".source = ../dotfiles/swaync;
   xdg.configFile."yazi".source = ../dotfiles/yazi;
   xdg.configFile."wofi".source = ../dotfiles/wofi;
+  xdg.configFile."fish/config.fish".force=true;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
 
   # Starship
