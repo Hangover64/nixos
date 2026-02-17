@@ -120,6 +120,7 @@
     obsidian
     spotify
     discord
+    vencord
     vivaldi
     tor-browser
     libreoffice
