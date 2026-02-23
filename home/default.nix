@@ -154,6 +154,7 @@
 
     #cli
     ani-cli
+    acpi
   ];
 
   fonts.fontconfig.enable = true;
