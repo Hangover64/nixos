@@ -11,6 +11,7 @@
     fish
     diffutils
     ffmpeg
+    acpi
 
     # Terminal
     alacritty
