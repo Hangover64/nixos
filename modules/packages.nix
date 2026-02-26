@@ -62,5 +62,6 @@
     # Misc
     docker
     nix-ld
+    gparted
   ];
 }
