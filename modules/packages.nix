@@ -63,6 +63,6 @@
     docker
     nix-ld
     gparted
-    cgdisk
+    gptfdisk
   ];
 }
