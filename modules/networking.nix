@@ -10,7 +10,7 @@
 
   environment.systemPackages = with pkgs; [
     nftables
-    mullvad-vpn
-    nmgui
+      mullvad-vpn
+      nmgui
   ];
 }

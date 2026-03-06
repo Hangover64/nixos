@@ -25,6 +25,8 @@
 
   programs.alacritty.enable = true;
 
+  hardware.bluetooth.enable = true;
+
   programs.neovim = {
     enable = true;
     viAlias = true;

@@ -16,9 +16,9 @@
   };
 
   outputs = { self, nixpkgs, caelestia-shell, ... }@inputs:
-  let
+    let
     commonModules = [
-      ./modules/common.nix
+    ./modules/common.nix
       ./modules/hyprland.nix
       ./modules/audio.nix
       ./modules/networking.nix

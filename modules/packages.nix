@@ -4,62 +4,62 @@
   programs.steam.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # CLI tools
+# CLI tools
     wget
-    zip
-    unzip
-    fish
-    diffutils
-    ffmpeg
+      zip
+      unzip
+      fish
+      diffutils
+      ffmpeg
 
-    # Terminal
-    alacritty
+# Terminal
+      alacritty
 
-    # Development
-    python315
-    python313Packages.pydbus
-    gcc
-    glibc.static
-    nil
-    clang-tools
-    libclang
-    rustup
-    claude-code
+# Development
+      python315
+      python313Packages.pydbus
+      gcc
+      glibc.static
+      nil
+      clang-tools
+      libclang
+      rustup
+      claude-code
 
-    # Media
-    smplayer
-    mpv
-    mpvpaper
-    waypaper
-    cava
-    cmatrix
+# Media
+      smplayer
+      mpv
+      mpvpaper
+      waypaper
+      cava
+      cmatrix
 
-    # Hyprland extras
-    quickshell
-    dbus
+# Hyprland extras
+      quickshell
+      dbus
 
-    # Caelestia
-    swappy
-    grim
-    dart-sass
-    app2unit
-    cliphist
-    fuzzel
+# Caelestia
+      swappy
+      grim
+      dart-sass
+      app2unit
+      cliphist
+      fuzzel
 
-    # Screenshot
-    flameshot
-    slurp
-    wl-clipboard
-    libnotify
+# Screenshot
+      flameshot
+      slurp
+      wl-clipboard
+      libnotify
 
-    # VPN
-    protonvpn-gui
+# VPN
+      protonvpn-gui
 
-    # Gaming
-    prismlauncher
+# Gaming
+      prismlauncher
 
-    # Misc
-    docker
-    nix-ld
-  ];
+# Misc
+      docker
+      nix-ld
+      ];
 }

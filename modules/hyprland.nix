@@ -10,13 +10,13 @@
 
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal
-    xdg-desktop-portal-hyprland
-    hyprpaper
-    hyprshot
-    hyprlock
-    hypridle
-    wofi
-    brightnessctl
+      xdg-desktop-portal-hyprland
+      hyprpaper
+      hyprshot
+      hyprlock
+      hypridle
+      wofi
+      brightnessctl
   ];
 
   environment.variables = {
