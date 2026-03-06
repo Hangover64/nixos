@@ -7,6 +7,7 @@
     inputs.caelestia-shell.homeManagerModules.default
     ./hyprland.nix
     ./hypr-extras.nix
+    ../hosts/laptop/monitors.nix
   ];
   # Shell
   programs.bash = {
