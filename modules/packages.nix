@@ -5,21 +5,19 @@
 
   environment.systemPackages = with pkgs; [
 # CLI tools
-    wget
-<<<<<<< HEAD
+      wget
       zip
       unzip
       fish
       diffutils
       ffmpeg
-=======
-    zip
-    unzip
-    fish
-    diffutils
-    ffmpeg
-    acpi
->>>>>>> refs/remotes/origin/main
+
+      zip
+      unzip
+      fish
+      diffutils
+      ffmpeg
+      acpi
 
 # Terminal
       alacritty
@@ -67,17 +65,11 @@
 # Gaming
       prismlauncher
 
-<<<<<<< HEAD
-# Misc
-      docker
-      nix-ld
-      ];
-=======
+
     # Misc
     docker
     nix-ld
     gparted
     gptfdisk
   ];
->>>>>>> refs/remotes/origin/main
 }
