@@ -6,7 +6,7 @@
 
     settings = {
 # Host-specific monitor config (scale differs per device)
-      monitor = hostSettings.monitorConfig;
+      #monitor = hostSettings.monitorConfig;
 
 # Programs
       "$terminal" = "alacritty";
