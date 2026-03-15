@@ -3,6 +3,7 @@
   imports = [
     ./hardware-configuration.nix
       ./mounts-pc.nix
+      ./monitors.nix
   ];
 
 # AMD GPU kernel params
