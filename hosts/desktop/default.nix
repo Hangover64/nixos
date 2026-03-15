@@ -19,7 +19,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    mesa
+      mesa
       vulkan-tools
       rocmPackages.rocm-smi
       xfsprogs
