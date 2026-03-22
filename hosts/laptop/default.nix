@@ -3,7 +3,6 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/hyprland.nix
-    ./monitors.nix
   ];
 
 # GPU - adjust to your laptop's GPU (Intel/AMD/Nvidia)
