@@ -155,6 +155,7 @@
 
     #cli
     ani-cli
+    zathura
   ];
 
   fonts.fontconfig.enable = true;
