@@ -27,6 +27,10 @@
 
   console.keyMap = "de-latin1-nodeadkeys";
 
+  environment.sessionVariables = {
+    ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+  };
+
   users.users.hendrikf = {
     shell = pkgs.fish;
     isNormalUser = true;
