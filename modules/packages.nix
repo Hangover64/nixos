@@ -11,6 +11,8 @@
       fish
       diffutils
       ffmpeg
+      eza
+      zoxide
 
       zip
       unzip
