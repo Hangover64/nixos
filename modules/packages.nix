@@ -18,6 +18,7 @@
       diffutils
       ffmpeg
       acpi
+      gpu-screen-recorder
 
 # Terminal
       alacritty
