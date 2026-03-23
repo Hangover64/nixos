@@ -19,6 +19,7 @@
       ffmpeg
       acpi
       gpu-screen-recorder
+      gpu-screen-recorder-gtk
 
 # Terminal
       alacritty
