@@ -5,6 +5,12 @@
     nftables.enable = true;
   };
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true;
+
   services.firewalld.enable = true;
   services.mullvad-vpn.enable = true;
 
