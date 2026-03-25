@@ -13,6 +13,7 @@
       ffmpeg
       eza
       zoxide
+      upower
 
       zip
       unzip
