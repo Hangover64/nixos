@@ -61,6 +61,7 @@
   programs.nix-ld.libraries = with pkgs; [ ];
 
   services.printing.enable = true;
+  services.upower.enable = true;
   services.xserver.xkb = {
     layout = "de";
     variant = "";
