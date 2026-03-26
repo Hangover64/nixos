@@ -17,7 +17,6 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
-      RADV
       rocmPackages.clr.icd
       libva-utils
     ];
