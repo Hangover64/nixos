@@ -24,7 +24,7 @@
     fish_config theme choose "Dracula Official"
   '';
   functions = {
-    fish_right_prompt.fish = {
+    fish_right_prompt = {
       body = ''
      mommy -1 -s $status
       '';
