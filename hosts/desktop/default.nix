@@ -20,7 +20,7 @@
       amdvlk
       rocmPackages.clr.icd
       libva-utils
-    ]
+    ];
   };
 
   environment.systemPackages = with pkgs; [
