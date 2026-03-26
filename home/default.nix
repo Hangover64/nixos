@@ -156,6 +156,7 @@
     #cli
     ani-cli
     zathura
+    mommy
   ];
 
   fonts.fontconfig.enable = true;
