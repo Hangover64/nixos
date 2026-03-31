@@ -119,7 +119,7 @@
         inner_color = "$background";
         font_color = "$foreground";
         fade_on_empty = false;
-        placeholder_text = ''pango:<span foreground="#{$foregroundRaw}">󰌾  Logged in as <span foreground="#{$accentRaw}">$USER</span></span>'';
+        placeholder_text = ''pango:<span foreground="#${foregroundRaw}">󰌾  Logged in as <span foreground="#${accentRaw}">$USER</span></span>'';
         hide_input = false;
         check_color = "$accent";
         fail_color = "$red";
