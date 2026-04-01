@@ -135,6 +135,7 @@
     pavucontrol
     networkmanagerapplet
     lunar-client
+    qalculate-gtk
 
     # Hyprland tools
     swaynotificationcenter
