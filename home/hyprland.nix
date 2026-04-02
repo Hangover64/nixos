@@ -137,7 +137,7 @@
           "$mainMod, V, togglefloating"
           "$mainMod, P, pseudo"
           "$mainMod, J, togglesplit"
-          "$mainMod, L, exec, hyprlock"
+          "$mainMod, L, exec, caelestia shell lock lock"
           "$mainMod, Y, exec, hyprctl reload"
 
 # Focus
