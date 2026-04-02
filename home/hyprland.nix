@@ -16,7 +16,7 @@
 
 # Autostart
       exec-once = [
-        "hyprlock & caelestia-shell & hypridle"
+        "caelestia-shell & hypridle"
           "hyprpaper & swaync"
           "sleep 5m & ~/nixos/wallpaper.sh"
       ];
