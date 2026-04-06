@@ -60,6 +60,12 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [ ];
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    config.common.default = "*";
+  };
+
   services.printing.enable = true;
   services.upower.enable = true;
   services.xserver.xkb = {
