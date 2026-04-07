@@ -117,7 +117,7 @@
     yazi
     ueberzugpp
     python3
-    pydbus
+    python313Packages.pydbus
 
     # GUI Apps
     zed-editor
