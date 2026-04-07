@@ -138,6 +138,7 @@
     networkmanagerapplet
     lunar-client
     qalculate-gtk
+    insomnia
 
     # Hyprland tools
     swaynotificationcenter
