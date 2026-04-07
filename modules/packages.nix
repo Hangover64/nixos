@@ -65,7 +65,7 @@
       libnotify
 
 # VPN
-      protonvpn-gui
+      proton-vpn
 
 # Gaming
       prismlauncher
