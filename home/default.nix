@@ -166,6 +166,7 @@
     ani-cli
     zathura
     mommy
+    jdk21
   ];
 
   fonts.fontconfig.enable = true;
