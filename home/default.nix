@@ -168,6 +168,7 @@
     zathura
     mommy
     jdk21
+    jdk25
   ];
 
   fonts.fontconfig.enable = true;
