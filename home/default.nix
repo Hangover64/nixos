@@ -139,6 +139,7 @@
     lunar-client
     qalculate-gtk
     insomnia
+    logisim
 
     # Hyprland tools
     swaynotificationcenter
