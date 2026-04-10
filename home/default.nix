@@ -57,7 +57,7 @@
       notifs = {
         enable = true;
         clearThreshold = 0.3;
-        defaultExpireTimeout = 1000;
+        defaultExpireTimeout = 5000;
         actionOnClick = false;
         expire = true;
       };
