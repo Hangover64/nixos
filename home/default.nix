@@ -68,6 +68,10 @@
           showBattery = hostSettings.showBattery;
           showMicrophone = true;
         };
+        workspaces = {
+          activeIndicator = true;
+          perMonitorWorkspaces = false;
+        };
         clock.showDate = true;
       };
       paths.wallpaperDir = "~/Pictures/Wallpapers";
