@@ -58,7 +58,6 @@
         lockBeforeSleep = true;
         inhibitWhenAudio = true;
         };
-      };
       paths = {
         wallpaperDir = "~/Pictures/Wallpapers";
       };
@@ -97,6 +96,7 @@
         enable = true;
         settings.theme.enableGtk = false;
       };
+    };
   };
 
   # Dotfiles
