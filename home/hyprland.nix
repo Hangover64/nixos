@@ -17,7 +17,7 @@
 # Autostart
       exec-once = [
         "caelestia-shell & hypridle"
-          "hyprpaper & swaync"
+          #"hyprpaper & swaync"
           "sleep 5m & ~/nixos/wallpaper.sh"
       ];
 
