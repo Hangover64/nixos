@@ -91,7 +91,6 @@
         };
         clock.showDate = true;
       };
-      paths.wallpaperDir = "~/Pictures/Wallpapers";
       launcher.maxWallpapers = 9;
       theme.scheme = "dynamic";
     };
