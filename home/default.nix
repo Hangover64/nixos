@@ -57,7 +57,6 @@
       performance = {
         keepAlive = true;
         preloadWidgets = true;
-        bar.status.showDate = true;
       };
       dashboard.mediaUpdateInterval = 1000;
       bar = {
@@ -66,6 +65,7 @@
         width = 10;
         offset = 0;
         status.showBattery = hostSettings.showBattery;
+        clock.showDate = true;
       };
       paths.wallpaperDir = "~/Pictures/Wallpapers";
       launcher.maxWallpapers = 9;
