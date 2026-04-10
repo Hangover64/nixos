@@ -92,11 +92,12 @@
       };
       launcher.maxWallpapers = 9;
       theme.scheme = "dynamic";
-    cli = {
-      enable = true;
-      settings.theme.enableGtk = false;
-    };
+      cli = {
+        enable = true;
+        settings.theme.enableGtk = false;
+      };
   };
+};
 
   # Dotfiles
   xdg.configFile."nvim".source = ../dotfiles/nvim;
