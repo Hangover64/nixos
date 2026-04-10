@@ -98,7 +98,6 @@
         settings.theme.enableGtk = false;
       };
   };
-  };
 
   # Dotfiles
   xdg.configFile."nvim".source = ../dotfiles/nvim;
