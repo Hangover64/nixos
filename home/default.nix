@@ -54,6 +54,13 @@
       environment = [];
     };
     settings = {
+      notifs = {
+        enable = true;
+        clearThreshold = 0.3;
+        defaultExpireTimeout = 1000;
+        actionOnClick = false;
+        expire = true;
+      };
       performance = {
         keepAlive = true;
         preloadWidgets = true;
