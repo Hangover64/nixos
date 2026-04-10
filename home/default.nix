@@ -29,7 +29,6 @@
      mommy -1 -s $status
       '';
     };
-  };
 };
 
   programs.alacritty.enable = true;
