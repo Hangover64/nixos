@@ -15,21 +15,22 @@
     enable = true;
     initExtra = ''
       eval "$(starship init bash)"
-    '';
+      '';
   };
   programs.fish = {
-  enable = true;
-  interactiveShellInit = ''
-    starship init fish | source
-    fish_config theme choose "Dracula Official"
-  '';
-  functions = {
-    fish_right_prompt = {
-      body = ''
-     mommy -1 -s $status
+    enable = true;
+    interactiveShellInit = ''
+      starship init fish | source
+      fish_config theme choose "Dracula Official"
       '';
+    functions = {
+      fish_right_prompt = {
+        body = ''
+          mommy -1 -s $status
+          '';
+      };
     };
-};
+  };
 
   programs.alacritty.enable = true;
 
