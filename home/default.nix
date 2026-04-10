@@ -64,7 +64,10 @@
         padding = 0;
         width = 10;
         offset = 0;
-        status.showBattery = hostSettings.showBattery;
+        status = {
+          showBattery = hostSettings.showBattery;
+          showMicrophone = true;
+        };
         clock.showDate = true;
       };
       paths.wallpaperDir = "~/Pictures/Wallpapers";
