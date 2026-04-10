@@ -54,10 +54,20 @@
       environment = [];
     };
     settings = {
+      idle = {
+        lockBeforeSleep = true;
+        inhibitWhenAudio = true;
+        };
+      };
+      paths = {
+        wallpaperDir = "~/Pictures/Wallpapers";
+      };
       notifs = {
         enable = true;
         clearThreshold = 0.3;
         defaultExpireTimeout = 5000;
+        expandThreshold = 20;
+        openExpanded = false;
         actionOnClick = false;
         expire = true;
       };
