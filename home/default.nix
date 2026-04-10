@@ -57,6 +57,7 @@
       performance = {
         keepAlive = true;
         preloadWidgets = true;
+        bar.clock.showDate = true;
       };
       dashboard.mediaUpdateInterval = 1000;
       bar = {
