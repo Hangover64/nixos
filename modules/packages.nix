@@ -23,6 +23,7 @@
       acpi
       gpu-screen-recorder
       gpu-screen-recorder-gtk
+      
 
 # Terminal
       alacritty
@@ -76,5 +77,6 @@
     nix-ld
     gparted
     gptfdisk
+    xfsprogs
   ];
 }
