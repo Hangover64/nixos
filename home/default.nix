@@ -113,7 +113,12 @@
   # Starship
   programs.starship = {
     enable = true;
-    settings = builtins.fromTOML (builtins.readFile ../dotfiles/starship/starship.toml);
+    settings = {
+      builtins.fromTOML (builtins.readFile ../dotfiles/starship/starship.toml);
+      git_status = {
+        ignore_submodules = true;
+      };
+    };
   };
 
   # Git
