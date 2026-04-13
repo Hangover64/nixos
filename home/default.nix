@@ -5,7 +5,6 @@
 
   imports = [
     inputs.caelestia-shell.homeManagerModules.default
-    inputs.caelestia-shell.inputs.caelestia-cli.packages.x86_64-linux.default
     ./hyprland.nix
     ./hypr-extras.nix
     ../hosts/laptop/monitors.nix
