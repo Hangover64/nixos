@@ -191,6 +191,7 @@
     ani-cli
     zathura
     mommy
+    rquickshare
     jdk21
     (lib.lowPrio jdk25)
   ];
