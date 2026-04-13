@@ -12,11 +12,11 @@
   services.blueman.enable = true;
 
   services.firewalld.enable = true;
-  #services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.enable = true;
 
   environment.systemPackages = with pkgs; [
     nftables
-      #mullvad-vpn
+      mullvad-vpn
       nmgui
   ];
 }
