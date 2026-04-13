@@ -165,6 +165,7 @@
     qalculate-gtk
     insomnia
     logisim
+    localsend
 
     # Hyprland tools
     swaynotificationcenter
