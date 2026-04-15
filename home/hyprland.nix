@@ -137,7 +137,6 @@
           "$mainMod, V, togglefloating"
           "$mainMod, P, pseudo"
           "$mainMod, J, togglesplit"
-          "$mainMod, L, exec, caelestia shell lock lock"
           "$mainMod, Y, exec, hyprctl reload"
 
 # Focus
@@ -181,8 +180,8 @@
 
 # Caelestia Shell
           "$mainMod, R, global, caelestia:launcher"
-          "$mainMod, N, global, caelestia:notifs"
-          "$mainMod SHIFT, L, global, caelestia:lock"
+          "$mainMod, N, global, caelestia:sidebar"
+          "$mainMod, L, global, caelestia:lock"
           "$mainMod, D, global, caelestia:dashboard"
           "$mainMod SHIFT, P, global, caelestia:picker"
           "$mainMod SHIFT, E, global, caelestia:session"
