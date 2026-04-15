@@ -192,7 +192,7 @@
 
     #cli
     ani-cli
-    qt6
+    qt6.qtbase
     zathura
     mommy
     rquickshare
