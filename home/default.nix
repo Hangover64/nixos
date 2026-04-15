@@ -192,6 +192,7 @@
 
     #cli
     ani-cli
+    qt6.full
     zathura
     mommy
     rquickshare
