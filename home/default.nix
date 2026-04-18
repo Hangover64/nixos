@@ -166,6 +166,7 @@
     insomnia
     logisim
     localsend
+    qbittorrent
 
     # Hyprland tools
     swaynotificationcenter
