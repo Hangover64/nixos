@@ -130,6 +130,7 @@
     python3
     python313Packages.pydbus
     python313Packages.dbus-python
+    python3Packages.dbus-python
     
     # GUI Apps
     zed-editor
