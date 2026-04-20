@@ -69,9 +69,6 @@
       };
       dashboard.mediaUpdateInterval = 1000;
       bar = {
-        margins = 0;
-        padding = 0;
-        offset = 0;
         status = {
           showBattery = hostSettings.showBattery;
           showMicrophone = true;
