@@ -56,10 +56,6 @@
       environment = [];
     };
     settings = {
-      idle = {
-        lockBeforeSleep = true;
-        inhibitWhenAudio = true;
-        };
       paths = {
         wallpaperDir = "~/Pictures/Wallpapers";
       };
@@ -75,7 +71,6 @@
       bar = {
         margins = 0;
         padding = 0;
-        width = 10;
         offset = 0;
         status = {
           showBattery = hostSettings.showBattery;
@@ -88,7 +83,6 @@
         clock.showDate = true;
       };
       launcher.maxWallpapers = 9;
-      theme.scheme = "dynamic";
     };
       cli = {
         enable = true;
