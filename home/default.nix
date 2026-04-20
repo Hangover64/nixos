@@ -64,17 +64,12 @@
         wallpaperDir = "~/Pictures/Wallpapers";
       };
       notifs = {
-        enable = true;
         clearThreshold = 0.3;
         defaultExpireTimeout = 5000;
         expandThreshold = 20;
         openExpanded = false;
         actionOnClick = false;
         expire = true;
-      };
-      performance = {
-        keepAlive = true;
-        preloadWidgets = true;
       };
       dashboard.mediaUpdateInterval = 1000;
       bar = {
