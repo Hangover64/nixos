@@ -186,6 +186,7 @@
     rquickshare
     jdk21
     (lib.lowPrio jdk25)
+    gvfs
   ];
 
   fonts.fontconfig.enable = true;
