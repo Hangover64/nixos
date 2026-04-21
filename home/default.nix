@@ -187,6 +187,7 @@
     jdk21
     (lib.lowPrio jdk25)
     gvfs
+    jmtpfs
   ];
 
   fonts.fontconfig.enable = true;
