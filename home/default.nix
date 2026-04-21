@@ -188,6 +188,7 @@
     (lib.lowPrio jdk25)
     gvfs
     jmtpfs
+    gnome-keyring
   ];
 
   fonts.fontconfig.enable = true;
