@@ -189,6 +189,7 @@
     gvfs
     jmtpfs
     gnome-keyring
+    stress-ng
   ];
 
   fonts.fontconfig.enable = true;
