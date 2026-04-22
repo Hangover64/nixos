@@ -61,6 +61,8 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [ ];
 
+
+  services.power-profiles-daemon.enable = true;
   services.printing.enable = true;
   services.upower.enable = true;
   services.xserver.xkb = {
