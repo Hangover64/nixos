@@ -190,6 +190,7 @@
     jmtpfs
     gnome-keyring
     stress-ng
+    powerstat
   ];
 
   fonts.fontconfig.enable = true;
