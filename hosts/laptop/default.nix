@@ -11,6 +11,10 @@
     enable32Bit = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    intel-media-driver
+  ];
+
 # Laptop-specific: power management, battery, etc.
 # services.tlp.enable = true;
 # services.thermald.enable = true;
