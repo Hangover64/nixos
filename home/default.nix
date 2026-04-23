@@ -154,6 +154,7 @@
     logisim
     localsend
     qbittorrent
+    wireshark
 
     # Hyprland tools
     swaynotificationcenter
