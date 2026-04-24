@@ -3,6 +3,12 @@
   programs.firefox.enable = true;
   programs.steam.enable = true;
 
+
+  services.monado = {
+    enable = true;
+    defaultRuntime = true;
+  };
+
   environment.systemPackages = with pkgs; [
 # CLI tools
       wget

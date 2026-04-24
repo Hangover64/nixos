@@ -116,11 +116,6 @@
     };
   };
 
-  services.monado = {
-    enable = true;
-    defaultRuntime = true;
-  };
-
   # Packages
   home.packages = with pkgs; [
     htop
