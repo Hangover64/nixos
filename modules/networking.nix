@@ -5,6 +5,10 @@
     nftables.enable = true;
   };
 
+  programs.wireshark = {
+    enable = true;
+  };
+
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;

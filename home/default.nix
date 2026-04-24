@@ -11,10 +11,6 @@
     ../hosts/desktop/monitors.nix
   ];
 
-  programs.wireshark = {
-    enable = true;
-  };
-
   # Shell
   programs.bash = {
     enable = true;
