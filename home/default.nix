@@ -193,6 +193,7 @@
     gnome-keyring
     stress-ng
     powerstat
+    shadowsocks-rust
   ];
 
   fonts.fontconfig.enable = true;
