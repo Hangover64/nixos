@@ -70,6 +70,14 @@
     variant = "";
   };
   
+  #VR
+
+  services.wivrn = {
+    enable = true;
+    openFirewall = true;
+    autoStart = true;
+  };
+
   security.wrappers.vrcompositor-launcher = {
     source = "/home/hendrikf/.local/share/Steam/steamapps/common/SteamVR/bin/linux64/vrcompositor-launcher";
     capabilities = "cap_sys_nice+eip";
