@@ -76,6 +76,7 @@
     enable = true;
     openFirewall = true;
     autoStart = true;
+    defaultRuntime = true;
   };
 
   security.wrappers.vrcompositor-launcher = {
