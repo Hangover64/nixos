@@ -89,23 +89,6 @@
     group = "root";
   };
 
-  programs.steam = let
-  patchedBwrap = pkgs.bubblewrap.overrideAttrs (o: {
-    patches = (o.patches or []) ++ [
-      ./bwrap.patch
-    ];
-  });
-in {
-  enable = true;
-  package = pkgs.steam.override {
-    buildFHSEnv = (args: ((pkgs.buildFHSEnv.override {
-      bubblewrap = patchedBwrap;
-    }) (args // {
-      extraBwrapArgs = (args.extraBwrapArgs or []) ++ [ "--cap-add ALL" ];
-    })));
-  };
-};
-
 #endofVR
 
   security.wrappers.gsr-kms-server = {
