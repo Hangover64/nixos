@@ -3,8 +3,8 @@
   networking = {
     networkmanager.enable = true;
     nftables.enable = true;
-    allowTCPPorts = [9757];
-    allowUDPPorts = [9757];
+    firewall.allowTCPPorts = [9757];
+    firewall.allowUDPPorts = [9757];
   };
 
   programs.wireshark = {
