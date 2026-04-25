@@ -80,8 +80,7 @@
 
   services.avahi = {
     enable = true;
-
-  }
+  };
 
   security.wrappers.vrcompositor-launcher = {
     source = "/home/hendrikf/.local/share/Steam/steamapps/common/SteamVR/bin/linux64/vrcompositor-launcher";
