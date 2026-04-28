@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.firefox.enable = true;
-  programs.steam.enable = {
+  programs.steam = {
     enable = true;
     package = pkgs.steam.override {
       extraProfile = ''
