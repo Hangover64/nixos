@@ -72,6 +72,7 @@
 
 # Gaming
       prismlauncher
+      xrizer
 
 
     # Misc
