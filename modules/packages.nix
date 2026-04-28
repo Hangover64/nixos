@@ -1,7 +1,15 @@
 { pkgs, ... }:
 {
   programs.firefox.enable = true;
-  programs.steam.enable = true;
+  programs.steam.enable = {
+    enable = true;
+    package = pkgs.steam.override {
+      extraProfile = ''
+      export PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1
+      unset TZ
+      '';
+    };
+  };
 
 
   nixpkgs.config.allowUnfree = true;
