@@ -42,6 +42,7 @@
   };
 
   virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableKvm = true;
   users.extraGroups.vboxusers.members = [ "hendrikf" ];
 
   home-manager = {
