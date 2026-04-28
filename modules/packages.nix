@@ -3,6 +3,8 @@
   programs.firefox.enable = true;
   programs.steam.enable = true;
 
+
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
 # CLI tools
       wget
