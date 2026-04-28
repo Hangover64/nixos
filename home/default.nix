@@ -145,6 +145,7 @@
     discord
     vencord
     vivaldi
+    vivaldi-ffmpeg-codecs
     tor-browser
     libreoffice
     pavucontrol
