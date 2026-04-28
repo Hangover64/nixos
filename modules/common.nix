@@ -41,6 +41,9 @@
     ];
   };
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "hendrikf" ];
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;

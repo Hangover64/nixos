@@ -98,6 +98,7 @@
   xdg.configFile."yazi".source = ../dotfiles/yazi;
   xdg.configFile."wofi".source = ../dotfiles/wofi;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
+#VR
 
   # Starship
   programs.starship = {
