@@ -44,6 +44,7 @@
   virtualisation.virtualbox.host.enable = true;
   virtualisation.virtualbox.host.enableKvm = true;
   users.extraGroups.vboxusers.members = [ "hendrikf" ];
+  virtualisation.virtualbox.host.addNetworkInterface = false;
 
   home-manager = {
     useGlobalPkgs = true;
