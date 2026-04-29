@@ -41,10 +41,10 @@
     ];
   };
 
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableKvm = true;
-  users.extraGroups.vboxusers.members = [ "hendrikf" ];
-  virtualisation.virtualbox.host.addNetworkInterface = false;
+  programs.virt-manager.enable = true;
+  users.groups.libvirt.members = [ "hendrikf" ];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
   home-manager = {
     useGlobalPkgs = true;
