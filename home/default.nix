@@ -196,8 +196,6 @@
     stress-ng
     powerstat
     shadowsocks-rust
-
-    virtualbox
   ];
 
   fonts.fontconfig.enable = true;
