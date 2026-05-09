@@ -48,6 +48,7 @@
       libclang
       rustup
       claude-code
+      nodejs
 
 # Media
       smplayer
