@@ -196,6 +196,7 @@
     stress-ng
     powerstat
     shadowsocks-rust
+    cava
   ];
 
   fonts.fontconfig.enable = true;
