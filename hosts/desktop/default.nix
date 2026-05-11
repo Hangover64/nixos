@@ -22,6 +22,11 @@
     ];
   };
 
+  nix.settings = {
+        substituters = ["https://nix-citizen.cachix.org"];
+        trusted-public-keys = ["nix-citizen.cachix.org-1:lPMkWc2X8XD4/7YPEEwXKKBg+SVbYTVrAaLA2wQTKCo="];
+    };
+
   environment.systemPackages = with pkgs; [
       mesa
       vulkan-tools
@@ -30,6 +35,8 @@
       razergenie
       razer-cli
       inputs.nix-citizen.packages.${system}.rsi-launcher
+      inputs.nix-citizen.packages.${system}.star-citizen
+      inputs.nix-citizen.packages.${system}.wine-astral
   ];
 
 
