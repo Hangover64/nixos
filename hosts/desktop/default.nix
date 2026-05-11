@@ -29,6 +29,7 @@
       xfsprogs
       razergenie
       razer-cli
+      inputs.nix-citizen.packages.${system}.rsi-launcher
   ];
 
 
