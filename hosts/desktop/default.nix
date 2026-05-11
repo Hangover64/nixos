@@ -37,6 +37,7 @@
       inputs.nix-citizen.packages.${system}.rsi-launcher
       inputs.nix-citizen.packages.${system}.star-citizen
       inputs.nix-citizen.packages.${system}.wine-astral
+      inputs.nix-citizen.packages.${system}.rsi-launcher-umu
   ];
 
 
