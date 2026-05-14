@@ -197,6 +197,10 @@
     powerstat
     shadowsocks-rust
     cava
+
+    #Developement
+    android-tools
+    jmtpfs
   ];
 
   fonts.fontconfig.enable = true;
