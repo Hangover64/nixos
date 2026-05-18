@@ -11,7 +11,7 @@
     ../hosts/desktop/monitors.nix
   ];
 
-  # Shell
+  # Shellllll
   programs.bash = {
     enable = true;
     initExtra = ''
