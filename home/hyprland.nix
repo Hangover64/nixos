@@ -19,6 +19,31 @@
         hl.exec_cmd("caelestia-shell & hypridle")
         hl.exec_cmd("sleem 5m & ~/nixos/wallpaper.sh")
       end)
+
+    -- settings.animations
+    hl.animation({ leaf = "global",          enabled = true, speed = 10,   curve = "default" })
+hl.animation({ leaf = "windows",         enabled = true, speed = 4.79, curve = "easeOutQuint" })
+hl.animation({ leaf = "windowsIn",       enabled = true, speed = 3.5,  curve = "easeOutQuint", style = "popin 87%" })
+hl.animation({ leaf = "windowsOut",      enabled = true, speed = 3.5,  curve = "linear",       style = "popin 87%" })
+hl.animation({ leaf = "windowsMove",     enabled = true, speed = 3.5,  curve = "default" })
+hl.animation({ leaf = "layers",          enabled = true, speed = 5,    curve = "easeOutQuint" })
+hl.animation({ leaf = "layersIn",        enabled = true, speed = 10,   curve = "easeOutQuint", style = "fade" })
+hl.animation({ leaf = "layersOut",       enabled = true, speed = 5,    curve = "linear",       style = "fade" })
+hl.animation({ leaf = "fade",            enabled = true, speed = 3,    curve = "quick" })
+hl.animation({ leaf = "fadeIn",          enabled = true, speed = 3,    curve = "almostLinear" })
+hl.animation({ leaf = "fadeOut",         enabled = true, speed = 3,    curve = "almostLinear" })
+hl.animation({ leaf = "fadeSwitch",      enabled = true, speed = 4,    curve = "default" })
+hl.animation({ leaf = "fadeDim",         enabled = true, speed = 4,    curve = "default" })
+hl.animation({ leaf = "fadeLayersIn",    enabled = true, speed = 1.79, curve = "almostLinear" })
+hl.animation({ leaf = "fadeLayersOut",   enabled = true, speed = 1.39, curve = "almostLinear" })
+hl.animation({ leaf = "fadePopupsIn",    enabled = true, speed = 4,    curve = "default" })
+hl.animation({ leaf = "fadePopupsOut",   enabled = true, speed = 4,    curve = "default" })
+hl.animation({ leaf = "border",         enabled = true, speed = 5.39, curve = "easeOutQuint" })
+hl.animation({ leaf = "borderangle",    enabled = true, speed = 1,    curve = "default" })
+hl.animation({ leaf = "workspaces",     enabled = true, speed = 2.5,  curve = "almostLinear", style = "slidefade" })
+hl.animation({ leaf = "workspacesIn",   enabled = true, speed = 2.5,  curve = "almostLinear", style = "slidefade" })
+hl.animation({ leaf = "workspacesOut",  enabled = true, speed = 2.5,  curve = "almostLinear", style = "slidefade" })
+hl.animation({ leaf = "zoomFactor",     enabled = true, speed = 7,    curve = "quick" })
     '';
 
 # Environment variables
@@ -65,40 +90,6 @@
       };
 
 # Animations
-      animations = {
-        enabled = true;
-        bezier = [
-          "easeOutQuint, 0.23, 1, 0.32, 1"
-            "easeInOutCubic, 0.65, 0.05, 0.36, 1"
-            "linear, 0, 0, 1, 1"
-            "almostLinear, 0.5, 0.5, 0.75, 1"
-            "quick, 0.15, 0, 0.1, 1"
-        ];
-        animation = [
-          "global, 1, 10, default"
-            "windows, 1, 4.79, easeOutQuint"
-            "windowsIn, 1, 3.5, easeOutQuint, popin 87%"
-            "windowsOut, 1, 3.5, linear, popin 87%"
-            "windowsMove, 1, 3.5, default"
-            "layers, 1, 5, easeOutQuint"
-            "layersIn, 1, 10, easeOutQuint, fade"
-            "layersOut, 1, 5, linear, fade"
-            "fade, 1, 3, quick"
-            "fadeIn, 1, 3, almostLinear"
-            "fadeOut, 1, 3, almostLinear"
-            "fadeSwitch, 1, 4, default"
-            "fadeDim, 1, 4, default"
-            "fadeLayersIn, 1, 1.79, almostLinear"
-            "fadeLayersOut, 1, 1.39, almostLinear"
-            "fadePopupsIn, 1, 4, default"
-            "fadePopupsOut, 1, 4, default"
-            "border, 1, 5.39, easeOutQuint"
-            "borderangle, 1, 1, default"
-            "workspaces, 1, 2.5, almostLinear, slidefade"
-            "workspacesIn, 1, 2.5, almostLinear, slidefade"
-            "workspacesOut, 1, 2.5, almostLinear, slidefade"
-            "zoomFactor, 1, 7, quick"
-            ];
       };
 
 # Layouts
