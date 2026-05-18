@@ -7,12 +7,11 @@
     settings = {
 # Host-specific monitor config (scale differs per device)
       #monitor = hostSettings.monitorConfig;
-
+      "$mod" = "SUPER";
 # Programs
-      "local terminal" = "alacritty";
-      "local fileManager" = "dolphin";
-      "local menu" = "wofi --show drun";
-      "hl.mainMod" = "SUPER";
+      "$terminal" = "alacritty";
+      "$fileManager" = "dolphin";
+      "$menu" = "wofi --show drun";
 
 # Autostart
       exec-once = [
@@ -130,67 +129,67 @@
 
 # Keybindings
       bind = [
-        "$mainMod, Q, exec, $terminal"
-          "$mainMod, C, killactive"
-          "$mainMod, M, exit"
-          "$mainMod, E, exec, $fileManager"
-          "$mainMod, V, togglefloating"
-          "$mainMod, P, pseudo"
-          "$mainMod, J, togglesplit"
-          "$mainMod, Y, exec, hyprctl reload"
+        "$mod, Q, exec, $terminal"
+          "$mod, C, killactive"
+          "$mod, M, exit"
+          "$mod, E, exec, $fileManager"
+          "$mod, V, togglefloating"
+          "$mod, P, pseudo"
+          "$mod, J, togglesplit"
+          "$mod, Y, exec, hyprctl reload"
 
 # Focus
-          "$mainMod, left, movefocus, l"
-          "$mainMod, right, movefocus, r"
-          "$mainMod, up, movefocus, u"
-          "$mainMod, down, movefocus, d"
+          "$mod, left, movefocus, l"
+          "$mod, right, movefocus, r"
+          "$mod, up, movefocus, u"
+          "$mod, down, movefocus, d"
 
 # Workspaces
-          "$mainMod, 1, workspace, 1"
-          "$mainMod, 2, workspace, 2"
-          "$mainMod, 3, workspace, 3"
-          "$mainMod, 4, workspace, 4"
-          "$mainMod, 5, workspace, 5"
-          "$mainMod, 6, workspace, 6"
-          "$mainMod, 7, workspace, 7"
-          "$mainMod, 8, workspace, 8"
-          "$mainMod, 9, workspace, 9"
-          "$mainMod, 0, workspace, 10"
+          "$mod, 1, workspace, 1"
+          "$mod, 2, workspace, 2"
+          "$mod, 3, workspace, 3"
+          "$mod, 4, workspace, 4"
+          "$mod, 5, workspace, 5"
+          "$mod, 6, workspace, 6"
+          "$mod, 7, workspace, 7"
+          "$mod, 8, workspace, 8"
+          "$mod, 9, workspace, 9"
+          "$mod, 0, workspace, 10"
 
 # Move to workspaces
-          "$mainMod SHIFT, 1, movetoworkspace, 1"
-          "$mainMod SHIFT, 2, movetoworkspace, 2"
-          "$mainMod SHIFT, 3, movetoworkspace, 3"
-          "$mainMod SHIFT, 4, movetoworkspace, 4"
-          "$mainMod SHIFT, 5, movetoworkspace, 5"
-          "$mainMod SHIFT, 6, movetoworkspace, 6"
-          "$mainMod SHIFT, 7, movetoworkspace, 7"
-          "$mainMod SHIFT, 8, movetoworkspace, 8"
-          "$mainMod SHIFT, 9, movetoworkspace, 9"
-          "$mainMod SHIFT, 0, movetoworkspace, 10"
+          "$mod SHIFT, 1, movetoworkspace, 1"
+          "$mod SHIFT, 2, movetoworkspace, 2"
+          "$mod SHIFT, 3, movetoworkspace, 3"
+          "$mod SHIFT, 4, movetoworkspace, 4"
+          "$mod SHIFT, 5, movetoworkspace, 5"
+          "$mod SHIFT, 6, movetoworkspace, 6"
+          "$mod SHIFT, 7, movetoworkspace, 7"
+          "$mod SHIFT, 8, movetoworkspace, 8"
+          "$mod SHIFT, 9, movetoworkspace, 9"
+          "$mod SHIFT, 0, movetoworkspace, 10"
 
 # Scroll workspaces
-          "$mainMod, mouse_down, workspace, e+1"
-          "$mainMod, mouse_up, workspace, e-1"
+          "$mod, mouse_down, workspace, e+1"
+          "$mod, mouse_up, workspace, e-1"
 
 # Screenshots
-          "$mainMod SHIFT, S, exec, hyprshot -m region"
-          "$mainMod CTRL, S, exec, hyprshot -m window"
-          "$mainMod ALT, S, exec, hyprshot -m output"
+          "$mod SHIFT, S, exec, hyprshot -m region"
+          "$mod CTRL, S, exec, hyprshot -m window"
+          "$mod ALT, S, exec, hyprshot -m output"
 
 # Caelestia Shell
-          "$mainMod, R, global, caelestia:launcher"
-          "$mainMod, N, global, caelestia:sidebar"
-          "$mainMod, L, global, caelestia:lock"
-          "$mainMod, D, global, caelestia:dashboard"
-          "$mainMod SHIFT, P, global, caelestia:picker"
-          "$mainMod SHIFT, E, global, caelestia:session"
+          "$mod, R, global, caelestia:launcher"
+          "$mod, N, global, caelestia:sidebar"
+          "$mod, L, global, caelestia:lock"
+          "$mod, D, global, caelestia:dashboard"
+          "$mod SHIFT, P, global, caelestia:picker"
+          "$mod SHIFT, E, global, caelestia:session"
           ];
 
 # Mouse bindings
       bindm = [
-        "$mainMod, mouse:272, movewindow"
-          "$mainMod, mouse:273, resizewindow"
+        "$mod, mouse:272, movewindow"
+          "$mod, mouse:273, resizewindow"
       ];
 
 # Media keys (with repeat)
@@ -209,7 +208,7 @@
           ", XF86AudioPause, exec, playerctl play-pause"
           ", XF86AudioPlay, exec, playerctl play-pause"
           ", XF86AudioPrev, exec, playerctl previous"
-          "$mainMod, Backspace, global, caelestia:clearNotifs"
+          "$mod, Backspace, global, caelestia:clearNotifs"
       ];
 
 # Window rules
