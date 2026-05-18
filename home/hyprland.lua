@@ -226,10 +226,3 @@ hl.window_rule({
     },
     no_focus = true,
 })
-
-hl.window_rule({
-    name  = "mullvad-vpn",
-    match = { class = "^(Mullvad VPN)$" },
-    float = true,
-    size  = "600 600",
-})
