@@ -14,11 +14,12 @@
       "menu" = "wofi --show drun";
 
 # Autostart
-      exec-once = [
-        "caelestia-shell & hypridle"
-          #"hyprpaper & swaync"
-          "sleep 5m & ~/nixos/wallpaper.sh"
-      ];
+    extraLuaConfig = ''
+      hl.on("hyprland.start", function ()
+        hl.exec_cmd("caelestia-shell & hypridle")
+        hl.exec_cmd("sleem 5m & ~/nixos/wallpaper.sh")
+      end)
+    '';
 
 # Environment variables
       env = [
