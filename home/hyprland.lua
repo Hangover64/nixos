@@ -9,6 +9,9 @@ local terminal    = "alacritty"
 local fileManager = "dolphin"
 local menu        = "wofi --show drun"
 
+
+hl.monitor({ output = "eDP-1", mode = "2880x1800@120",scale = 1.5 })
+
 -- =============================================================================
 -- Autostart
 -- =============================================================================
