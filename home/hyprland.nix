@@ -90,7 +90,6 @@ hl.animation({ leaf = "zoomFactor",     enabled = true, speed = 7,    curve = "q
       };
 
 # Animations
-      };
 
 # Layouts
       dwindle = {
