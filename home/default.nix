@@ -204,6 +204,7 @@
     #Developement
     android-tools
     jmtpfs
+    lua-language-server
   ];
 
   fonts.fontconfig.enable = true;
