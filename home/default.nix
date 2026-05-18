@@ -146,8 +146,8 @@
     discord
     vencord
     (vivaldi.override {
-      propietaryCodecs = true;
-     })
+      proprietaryCodecs = true;
+    })
     vivaldi-ffmpeg-codecs
     tor-browser
     libreoffice
