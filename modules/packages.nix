@@ -16,6 +16,7 @@
   environment.systemPackages = with pkgs; [
 # CLI tools
       wget
+      tmux
       zip
       unzip
       fish
