@@ -179,7 +179,7 @@ hl.bind(mod .. " + CTRL + S",  hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind(mod .. " + ALT + S",   hl.dsp.exec_cmd("hyprshot -m output"))
 
 -- Caelestia Shell (global dispatchers)
-hl.bind(mod .. " + R",         hl.dsp.global("caelestia:launcher"))
+hl.bind(mod .. " + R",         hl.dsp.exec_cmd("caelestia shell drawers toggle launcher"))
 hl.bind(mod .. " + N",         hl.dsp.global("caelestia:sidebar"))
 hl.bind(mod .. " + L",         hl.dsp.global("caelestia:lock"))
 hl.bind(mod .. " + D",         hl.dsp.global("caelestia:dashboard"))
