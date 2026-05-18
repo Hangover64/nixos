@@ -5,5 +5,6 @@
     enable = true;
     settings = {};
     extraConfig = builtins.readFile ./hyprland.lua;
+    #blah
   };
 }
