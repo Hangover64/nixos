@@ -9,10 +9,10 @@
       #monitor = hostSettings.monitorConfig;
 
 # Programs
-      "$terminal" = "alacritty";
-      "$fileManager" = "dolphin";
-      "$menu" = "wofi --show drun";
-      "$mainMod" = "SUPER";
+      "local terminal" = "alacritty";
+      "local fileManager" = "dolphin";
+      "local menu" = "wofi --show drun";
+      "hl.mainMod" = "SUPER";
 
 # Autostart
       exec-once = [
