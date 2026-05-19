@@ -12,6 +12,16 @@
   };
 
 
+ xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
+    ];
+  };
+
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
 # CLI tools
