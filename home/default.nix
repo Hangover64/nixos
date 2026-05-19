@@ -161,6 +161,7 @@
     localsend
     qbittorrent
     wireshark
+    brave
 
     # Hyprland tools
     swaynotificationcenter
