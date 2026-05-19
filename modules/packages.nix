@@ -35,7 +35,8 @@
       eza
       zoxide
       upower
-
+      
+      just
       zip
       unzip
       fish
