@@ -21,6 +21,13 @@
     ];
   };
 
+  services.hydra = {
+    enable = true;
+    hydraURL = "http://localhost:3000";
+    notificationSender = "hydra@localhost";
+    useSubstitutes = true;
+  };
+
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
@@ -63,7 +70,6 @@
       rustup
       claude-code
       nodejs
-      hydra
 
 # Media
       smplayer
