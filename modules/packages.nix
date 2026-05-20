@@ -63,6 +63,7 @@
       rustup
       claude-code
       nodejs
+      hydra
 
 # Media
       smplayer
