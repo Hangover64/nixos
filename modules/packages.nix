@@ -37,6 +37,7 @@
       upower
       
       just
+      pstree
       zip
       unzip
       fish
