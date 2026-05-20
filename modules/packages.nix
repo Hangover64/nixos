@@ -46,6 +46,7 @@
       acpi
       gpu-screen-recorder
       gpu-screen-recorder-gtk
+      ooniprobe-cli
       
 
 # Terminal
