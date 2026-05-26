@@ -69,6 +69,7 @@
       libclang
       rustup
       claude-code
+      lmstudio
       nodejs
 
 # Media
