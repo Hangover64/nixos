@@ -23,9 +23,9 @@ end
 local hostname = get_hostname()
 
 if hostname == "nixos-desktop" then
-  require("desktop/monitors.lua")
+  require("desktop/monitors")
 elseif hostname == "nixos-laptop" then
-  require("laptop/monitors.lua")
+  require("laptop/monitors")
 end
 -- =============================================================================
 -- Autostart

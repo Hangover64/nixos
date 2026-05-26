@@ -10,10 +10,10 @@
   xdg.configFile."hypr/hyprland.lua" = {
     source = ./hyprland.lua;
   };
-  xdg.configFile."hypr/laptop/lua.lua" = {
+  xdg.configFile."hypr/laptop/monitors.lua" = {
     source = ../hosts/laptop/monitors.lua;
   };
-  xdg.configFile."hypr/desktop/lua.lua" = {
+  xdg.configFile."hypr/desktop/monitors.lua" = {
     source = ../hosts/desktop/monitors.lua;
   };
 }
