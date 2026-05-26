@@ -11,9 +11,9 @@ local menu        = "wofi --show drun"
 
 
 local function get_hostname()
-  local f = io.open("/proc/sys/kernel/hostname", "r")
-  if f then
-    local h = f:read("*1")
+local f = io.open("/proc/sys/kernel/hostname", "r")
+    if f then
+      local h = f:read("l")
     f:close()
     return h
   end
@@ -23,9 +23,9 @@ end
 local hostname = get_hostname()
 
 if hostname == "nixos-desktop" then
-  require("/home/hendrikf/nixos/hosts/desktop/monitors.lua")
+  require("desktop/monitors.lua")
 elseif hostname == "nixos-laptop" then
-  require("/home/hendrikf/nixos/hosts/laptop/monitors.lua")
+  require("laptop/monitors.lua")
 end
 -- =============================================================================
 -- Autostart
