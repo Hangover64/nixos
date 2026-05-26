@@ -10,8 +10,23 @@ local fileManager = "dolphin"
 local menu        = "wofi --show drun"
 
 
-hl.monitor({ output = "eDP-1", mode = "2880x1800@120",scale = 1.5 })
+local function get_hostname()
+  local f = io.open("/proc/sys/kernel/hostname", "r")
+  if f then
+    local h = f:read("*1")
+    f:close()
+    return h
+  end
+  return ""
+end
 
+local hostname = get_hostname()
+
+if hostname == "nixos-desktop" then
+  require("/home/hendrikf/nixos/hosts/desktop/monitors.lua")
+elseif hostname == "nixos-laptop" then
+  require("/home/hendrikf/nixos/hosts/laptop/monitors.lua")
+end
 -- =============================================================================
 -- Autostart
 -- =============================================================================
