@@ -185,6 +185,7 @@
     jetbrains.rust-rover
     jetbrains.ruby-mine
     jetbrains.webstorm
+    jetbrains.clion
 
     #cli
     ani-cli
