@@ -152,9 +152,9 @@ hl.animation({ leaf = "fadePopupsIn",  enabled = true, speed = 4,    bezier = "d
 hl.animation({ leaf = "fadePopupsOut", enabled = true, speed = 4,    bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true, speed = 5.39, bezier = "easeOutQuint" })
 hl.animation({ leaf = "borderangle",   enabled = true, speed = 1,    bezier = "default" })
-hl.animation({ leaf = "workspaces",    enabled = true, speed = 2.5,  bezier = "almostLinear", style = "fade" }) -- slidefade
-hl.animation({ leaf = "workspacesIn",  enabled = true, speed = 2.5,  bezier = "almostLinear", style = "fade" }) --slidefade
-hl.animation({ leaf = "workspacesOut", enabled = true, speed = 2.5,  bezier = "almostLinear", style = "fade" }) --slidefade
+hl.animation({ leaf = "workspaces",    enabled = true, speed = 2.5,  bezier = "almostLinear", style = "" }) -- slidefade
+hl.animation({ leaf = "workspacesIn",  enabled = true, speed = 2.5,  bezier = "almostLinear", style = "" }) --slidefade
+hl.animation({ leaf = "workspacesOut", enabled = true, speed = 2.5,  bezier = "almostLinear", style = "" }) --slidefade
 hl.animation({ leaf = "zoomFactor",    enabled = true, speed = 7,    bezier = "quick" })
 
 -- =============================================================================
