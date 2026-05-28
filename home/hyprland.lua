@@ -223,7 +223,7 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 
 -- Gestures
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
-hl.gesture({ fingers = 3, direction = "pinch", action = "resize"}
+hl.gesture({ fingers = 2, direction = "pinch", action = "resize"}
 )
 
 
