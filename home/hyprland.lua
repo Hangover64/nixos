@@ -24,8 +24,10 @@ local hostname = get_hostname()
 
 if hostname == "nixos-desktop" then
   require("desktop/monitors")
+  require("desktop/cursor")
 elseif hostname == "nixos-laptop" then
   require("laptop/monitors")
+  require("laptop/cursor")
 end
 -- =============================================================================
 -- Autostart
@@ -38,8 +40,6 @@ end)
 -- =============================================================================
 -- Environment Variables
 -- =============================================================================
-hl.env("XCURSOR_SIZE",                 "32")
-hl.env("HYPRCURSOR_SIZE",              "32")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 
 -- =============================================================================
