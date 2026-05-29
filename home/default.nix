@@ -11,7 +11,7 @@
     ../hosts/desktop/monitors.nix
   ];
 
-  # Shellllll
+  # Shell
   programs.bash = {
     enable = true;
     initExtra = ''
@@ -80,7 +80,9 @@
         };
         clock.showDate = true;
       };
-      launcher.maxWallpapers = 9;
+      launcher = {
+        maxWallpapers = 9;
+        };
     };
       cli = {
         enable = true;
