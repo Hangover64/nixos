@@ -179,9 +179,6 @@
 
     # Misc
     antigravity
-    coolercontrol.coolercontrold
-    coolercontrol.coolercontrol-gui
-    coolercontrol.coolercontrol-ui-data
 
     #Jetbrains
     jetbrains.idea
