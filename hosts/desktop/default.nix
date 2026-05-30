@@ -38,6 +38,9 @@
       inputs.nix-citizen.packages.${system}.star-citizen
       inputs.nix-citizen.packages.${system}.wine-astral
       inputs.nix-citizen.packages.${system}.lug-helper
+      coolercontrol.coolercontrold
+      coolercontrol.coolercontrol-gui
+      coolercontrol.coolercontrol-ui-data
   ];
 
 
