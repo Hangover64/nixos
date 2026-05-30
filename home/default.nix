@@ -205,6 +205,7 @@
     powerstat
     shadowsocks-rust
     cava
+    rpi-imager
 
     #Developement
     android-tools
