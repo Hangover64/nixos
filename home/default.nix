@@ -40,7 +40,6 @@
       dynamic_background_opacity = true;
     };
   };
-  xdg.configFile."kitty".force = true;
 
   programs.alacritty.enable = true;
 
