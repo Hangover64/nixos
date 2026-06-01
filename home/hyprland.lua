@@ -6,7 +6,7 @@
 -- Variables
 local mod         = "SUPER"
 local terminal    = "kitty"
-local fileManager = "dolphin"
+local fileManager = "nemo"
 local menu        = "wofi --show drun"
 
 
