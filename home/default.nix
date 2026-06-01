@@ -101,6 +101,7 @@
   xdg.configFile."wofi".source = ../dotfiles/wofi;
   xdg.configFile."kde.org".source = ../dotfiles/kde.org;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
+  xdg.configFile."kitty".source = ../dotfiles/kitty;
 #VR
 
   # Starship
