@@ -33,13 +33,13 @@
     };
   };
 
-  programs.kitty = {
-    enable = true;
-    settings = {
-      background_opacity = "0.6";
-      dynamic_background_opacity = true;
-    };
-  };
+  #programs.kitty = {
+  #  enable = true;
+  #  settings = {
+  #    background_opacity = "0.6";
+  #    dynamic_background_opacity = true;
+  #  };
+  #};
 
   programs.alacritty.enable = true;
 
