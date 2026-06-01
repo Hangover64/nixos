@@ -33,6 +33,14 @@
     };
   };
 
+  programs.kitty = {
+    enable = true;
+    settings = {
+      background_opacity = "0.6";
+      dynamic_background_opacity = true;
+    };
+  };
+
   programs.alacritty.enable = true;
 
   programs.neovim = {
@@ -101,7 +109,6 @@
   xdg.configFile."wofi".source = ../dotfiles/wofi;
   xdg.configFile."kde.org".source = ../dotfiles/kde.org;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
-  xdg.configFile."kitty".source = ../dotfiles/kitty;
 #VR
 
   # Starship
@@ -137,7 +144,6 @@
     python313Packages.pydbus
     python313Packages.dbus-python
     python3Packages.dbus-python
-    kitty
     
     # GUI Apps
     zed-editor
