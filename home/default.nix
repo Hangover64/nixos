@@ -41,6 +41,7 @@
   #  };
   #};
   xdg.configFile."kitty/kitty.conf".force = true;
+  xdg.configFile."kitty".source = ../dotfiles/kitty;
 
   programs.alacritty.enable = true;
 
