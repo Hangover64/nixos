@@ -110,6 +110,7 @@
 
   # Dotfiles
   xdg.configFile."nvim".source = ../dotfiles/nvim;
+  xdg.configFile."mimeapps.list".force = true;
   xdg.configFile."fastfetch".source = ../dotfiles/fastfetch;
   xdg.configFile."alacritty".source = ../dotfiles/alacritty;
   xdg.configFile."zed".source = ../dotfiles/zed;
