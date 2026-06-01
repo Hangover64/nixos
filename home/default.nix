@@ -113,7 +113,6 @@
   xdg.configFile."swaync".source = ../dotfiles/swaync;
   xdg.configFile."yazi".source = ../dotfiles/yazi;
   xdg.configFile."wofi".source = ../dotfiles/wofi;
-  xdg.configFile."kde.org".source = ../dotfiles/kde.org;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
 #VR
 
@@ -154,14 +153,11 @@
     # GUI Apps
     zed-editor
     okteta
-    kdePackages.okular
-    kdePackages.dolphin
-    kdePackages.kwin
-    kdePackages.spectacle
     obsidian
     spotify
     discord
     vencord
+    nemo
     (vivaldi.override {
       proprietaryCodecs = true;
     })
