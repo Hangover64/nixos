@@ -40,7 +40,7 @@
   #    dynamic_background_opacity = true;
   #  };
   #};
-  xdg.configFile."kitty/kitty.conf".force = true;
+  xdg.configFile."kitty".force = true;
   xdg.configFile."kitty".source = ../dotfiles/kitty;
 
   programs.alacritty.enable = true;
