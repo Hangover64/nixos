@@ -161,7 +161,7 @@
     spotify
     discord
     vencord
-    nemo
+    kde.dolphin
     (vivaldi.override {
       proprietaryCodecs = true;
     })
