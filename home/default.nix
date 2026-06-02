@@ -161,7 +161,7 @@
     spotify
     discord
     vencord
-    kde.dolphin
+    kdePackages.dolphin
     (vivaldi.override {
       proprietaryCodecs = true;
     })
