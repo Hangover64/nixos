@@ -178,6 +178,7 @@
     qbittorrent
     wireshark
     brave
+    obs-studio
 
     # Hyprland tools
     swaynotificationcenter
