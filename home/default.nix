@@ -179,6 +179,7 @@
     wireshark
     brave
     obs-studio
+    telegram-desktop
 
     # Hyprland tools
     swaynotificationcenter
