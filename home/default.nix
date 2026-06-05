@@ -49,10 +49,6 @@
 
   programs.alacritty.enable = true;
 
-  gtk = {
-    enable = true;
-  };
-
   programs.neovim = {
     enable = true;
     withRuby = false;
