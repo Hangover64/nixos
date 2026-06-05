@@ -1,0 +1,11 @@
+
+[Default Applications]
+text/html=brave-browser.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
+x-scheme-handler/lunarclient=lunarclient.desktop
+x-scheme-handler/discord-562286213059444737=lunarclient.desktop
+x-scheme-handler/jetbrains=jetbrainsd.desktop
+inode/directory=org.kde.dolphin.desktop
