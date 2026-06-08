@@ -54,6 +54,7 @@
       gnumake
       yazi
       ueberzugpp
+      protontricks
 
 #Hardware
       coolercontrol.coolercontrold
