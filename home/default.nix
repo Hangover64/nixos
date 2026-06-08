@@ -35,19 +35,15 @@
 
   programs.kitty = {
     enable = true;
-
     font = {
       name = "JetBrainsMono Nerd Font";
       size = 12;
     };
-
     settings = {
       background_opacity = "0.6";
       dynamic_background_opacity = true;
     };
   };
-
-  programs.alacritty.enable = true;
 
   programs.neovim = {
     enable = true;
@@ -107,21 +103,9 @@
   # Dotfiles
   xdg.configFile."nvim".source = ../dotfiles/nvim;
   xdg.configFile."fastfetch".source = ../dotfiles/fastfetch;
-  xdg.configFile."alacritty".source = ../dotfiles/alacritty;
-  xdg.configFile."zed".source = ../dotfiles/zed;
-  xdg.configFile."waybar".source = ../dotfiles/waybar;
-  xdg.configFile."swaync".source = ../dotfiles/swaync;
   xdg.configFile."yazi".source = ../dotfiles/yazi;
-  xdg.configFile."wofi".source = ../dotfiles/wofi;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "inode/directory" = "org.kde.dolphin.desktop";
-    };
-  };
-#VR
-
+  
   # Starship
   programs.starship = {
     enable = true;
@@ -141,28 +125,11 @@
 
   # Packages
   home.packages = with pkgs; [
-    htop
-    btop
-    fastfetch
-    tree
-    file
-    dysk
-    gnumake
-    imagemagick
-    yazi
-    ueberzugpp
-    python3
-    python313Packages.pydbus
-    python313Packages.dbus-python
-    python3Packages.dbus-python
-    
     # GUI Apps
-    zed-editor
     okteta
     obsidian
     spotify
     discord
-    vencord
     kdePackages.dolphin
     (vivaldi.override {
       proprietaryCodecs = true;
@@ -175,24 +142,11 @@
     lunar-client
     qalculate-gtk
     insomnia
-    logisim
     localsend
     qbittorrent
     wireshark
     brave
-    obs-studio
     telegram-desktop
-
-    # Hyprland tools
-    swaynotificationcenter
-    playerctl
-    hyprpicker
-    foot
-
-    # Peripherals
-    piper
-    libratbag
-    spicetify-cli
 
     # Misc
     antigravity
@@ -209,11 +163,9 @@
     qt6.qtbase
     zathura
     mommy
-    rquickshare
     jdk21
     (lib.lowPrio jdk25)
     gvfs
-    jmtpfs
     gnome-keyring
     stress-ng
     powerstat

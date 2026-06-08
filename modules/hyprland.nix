@@ -14,8 +14,10 @@
       hyprshot
       hyprlock
       hypridle
-      wofi
       brightnessctl
+      hyprpicker
+      playerctl
+      swaynotificationcenter
   ];
 
   environment.variables = {

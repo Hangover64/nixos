@@ -1,7 +1,0 @@
-[opener] 
-mp4 = [
-	{ run = 'smplayer "$@"', block = true },
-	]
-pdf = [
-	{ run = 'okular "$@"', block = true },
-	]

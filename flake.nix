@@ -23,11 +23,7 @@
   outputs = { self, nixpkgs, caelestia-shell, ... }@inputs:
     let
     commonModules = [
-    ./modules/common.nix
-      ./modules/hyprland.nix
-      ./modules/audio.nix
-      ./modules/networking.nix
-      ./modules/packages.nix
+      ./modules
       inputs.home-manager.nixosModules.default
     ];
   in {
@@ -38,7 +34,6 @@
           inherit inputs;
           hostSettings = {
             hostname = "nixos-desktop";
-            monitorConfig = ",preferred,auto,1";
             showBattery = false;
           };
         };
@@ -50,7 +45,6 @@
           inherit inputs;
           hostSettings = {
             hostname = "nixos-laptop";
-            monitorConfig = ",preferred,auto,1.5";
             showBattery = true;
           };
         };

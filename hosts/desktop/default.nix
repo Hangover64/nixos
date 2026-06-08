@@ -32,19 +32,10 @@
       mesa
       vulkan-tools
       rocmPackages.rocm-smi
-      xfsprogs
       razergenie
       razer-cli
       inputs.nix-citizen.packages.${system}.star-citizen
       inputs.nix-citizen.packages.${system}.wine-astral
       inputs.nix-citizen.packages.${system}.lug-helper
-      coolercontrol.coolercontrold
-      coolercontrol.coolercontrol-gui
-      coolercontrol.coolercontrol-ui-data
   ];
-
-
-# Peripherals
-  programs.coolercontrol.enable = true;
-  services.ratbagd.enable = true;
 }

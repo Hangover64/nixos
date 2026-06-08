@@ -28,6 +28,8 @@
     useSubstitutes = true;
   };
 
+  programs.coolercontrol.enable = true;
+
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
@@ -36,24 +38,33 @@
       tmux
       zip
       unzip
-      fish
       diffutils
       ffmpeg
       eza
       zoxide
       upower
-      
       just
       pstree
       zip
       unzip
-      fish
       diffutils
       ffmpeg
       acpi
       gpu-screen-recorder
       gpu-screen-recorder-gtk
       ooniprobe-cli
+      btop
+      fastfetch
+      tree
+      file
+      gunmake
+      yazi
+      ueberzugpp
+
+#Hardware
+      coolercontrol.coolercontrold
+      coolercontrol.coolercontrol-gui
+      coolercontrol.coolercontrol-ui-data
       
 
 # Terminal
@@ -71,12 +82,19 @@
       claude-code
       lmstudio
       nodejs
+      docker
+      nix-ld
+      gparted
+      gptfdisk
+      xfsprogs
+      python3
+      python3Packages.dbus-python
+      imagemagick
+
 
 # Media
       smplayer
       mpv
-      mpvpaper
-      waypaper
       cava
       cmatrix
 
@@ -93,7 +111,6 @@
       fuzzel
 
 # Screenshot
-      flameshot
       slurp
       wl-clipboard
       libnotify
@@ -104,13 +121,5 @@
 # Gaming
       prismlauncher
       xrizer
-
-
-    # Misc
-    docker
-    nix-ld
-    gparted
-    gptfdisk
-    xfsprogs
-  ];
+   ];
 }
