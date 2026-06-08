@@ -147,6 +147,7 @@
     telegram-desktop
 
     # Misc
+    steamcmd
     antigravity
 
     #Jetbrains
