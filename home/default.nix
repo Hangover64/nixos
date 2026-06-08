@@ -7,8 +7,6 @@
     inputs.caelestia-shell.homeManagerModules.default
     ./hyprland.nix
     ./hypr-extras.nix
-    ../hosts/laptop/monitors.nix
-    ../hosts/desktop/monitors.nix
   ];
 
   # Shell
