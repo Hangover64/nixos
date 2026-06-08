@@ -111,7 +111,6 @@
       libnotify
 
 # VPN
-      proton-vpn
 
 # Gaming
       prismlauncher
