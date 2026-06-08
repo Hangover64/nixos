@@ -57,7 +57,7 @@
       fastfetch
       tree
       file
-      gunmake
+      gnumake
       yazi
       ueberzugpp
 
