@@ -63,7 +63,6 @@
       
 
 # Terminal
-      alacritty
 
 # Development
       python315
