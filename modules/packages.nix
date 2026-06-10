@@ -13,6 +13,7 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
+    config.common."org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
   };
 
   services.hydra = {
@@ -80,7 +81,6 @@
       claude-code
       lmstudio
       nodejs
-      docker
       nix-ld
       gparted
       gptfdisk
