@@ -22,7 +22,9 @@
     useSubstitutes = true;
   };
   
-  services.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+  };
 
   programs.coolercontrol.enable = true;
 
