@@ -21,6 +21,8 @@
     notificationSender = "hydra@localhost";
     useSubstitutes = true;
   };
+  
+  services.docker.enable = true;
 
   programs.coolercontrol.enable = true;
 

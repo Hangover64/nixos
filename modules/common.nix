@@ -37,7 +37,7 @@
     shell = pkgs.fish;
     isNormalUser = true;
     description = "Hendrikf";
-    extraGroups = [ "networkmanager" "wheel" "input" "bluetooth" "video" "render" "wireshark" "adbusers" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "bluetooth" "video" "render" "wireshark" "adbusers" "docker" ];
     packages = with pkgs; [
       kdePackages.kate
     ];
