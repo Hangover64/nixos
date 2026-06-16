@@ -32,6 +32,7 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
 # CLI tools
+      wofi
       wget
       tmux
       zip
