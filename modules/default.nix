@@ -5,5 +5,6 @@
     ./audio.nix
     ./networking.nix
     ./packages.nix
+    ./niri.nix
   ];
 }
