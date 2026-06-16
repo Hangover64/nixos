@@ -1,9 +1,5 @@
 { pkgs, ... }:
 {
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
   programs.hyprlock.enable = true;
 
   services.displayManager.cosmic-greeter.enable = true;
