@@ -102,6 +102,7 @@
   xdg.configFile."nvim".source = ../dotfiles/nvim;
   xdg.configFile."fastfetch".source = ../dotfiles/fastfetch;
   xdg.configFile."yazi".source = ../dotfiles/yazi;
+  xdg.configFile."niri".source = ../dotfiles/niri;
   xdg.configFile."fish/themes/Dracula Official.theme".source = ../dotfiles/fish/themes/dracula;
   
   # Starship
