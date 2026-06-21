@@ -68,6 +68,7 @@
       
 
 # Terminal
+      foot
 
 # Development
       python315
