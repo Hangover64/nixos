@@ -6,6 +6,7 @@
 
     caelestia-shell = {
       url = "github:caelestia-dots/shell";
+      url = "github:caelestia-dots/cli";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
