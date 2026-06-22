@@ -22,5 +22,5 @@ require("lazy").setup({
     { import = "amraleth.plugins" },
   },
   lockfile = vim.fn.stdpath("data") .. "/lazy-lock.json",
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false },
 })
