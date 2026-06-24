@@ -176,6 +176,7 @@
 
     #Developement
     android-tools
+    scrcpy
     jmtpfs
     lua-language-server
   ];
