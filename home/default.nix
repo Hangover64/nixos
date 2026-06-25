@@ -126,6 +126,7 @@
   home.packages = with pkgs; [
     # GUI Apps
     okteta
+    proton-pass
     obsidian
     spotify
     discord
