@@ -33,6 +33,7 @@
   environment.systemPackages = with pkgs; [
 # CLI tools
       wofi
+      ncdu
       wget
       tmux
       zip
