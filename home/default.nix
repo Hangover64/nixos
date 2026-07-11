@@ -127,6 +127,7 @@
     # GUI Apps
     okteta
     proton-pass
+    protonmail-desktop
     obsidian
     spotify
     discord
