@@ -23,6 +23,7 @@
       fish_config theme choose "Dracula Official"
       function fish_right_prompt
         mommy -1 -s $status
+        end
       '';
     functions = {
       fish_right_prompt = {
