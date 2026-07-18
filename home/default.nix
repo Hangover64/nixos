@@ -151,7 +151,7 @@
     wireshark
     brave
     telegram-desktop
-    winboat
+    #winboat
 
     # Misc
     steamcmd
