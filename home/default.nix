@@ -155,7 +155,7 @@
 
     # Misc
     steamcmd
-    antigravity
+    antigravity-ide
 
     #Jetbrains
     jetbrains.idea
