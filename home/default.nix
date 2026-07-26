@@ -21,6 +21,9 @@
     interactiveShellInit = ''
       starship init fish | source
       fish_config theme choose "Dracula Official"
+      function fish_right_prompt
+        mommy -1 -s $status
+        end
       '';
     functions = {
       fish_right_prompt = {
@@ -127,6 +130,7 @@
     # GUI Apps
     okteta
     proton-pass
+    protonmail-desktop
     obsidian
     spotify
     discord
@@ -147,7 +151,7 @@
     wireshark
     brave
     telegram-desktop
-    winboat
+    #winboat
 
     # Misc
     steamcmd
