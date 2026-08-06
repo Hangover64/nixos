@@ -74,8 +74,6 @@
       foot
 
 # Development
-      python315
-      python313Packages.pydbus
       gcc
       glibc.static
       nil
@@ -93,6 +91,7 @@
       python3Packages.dbus-python
       imagemagick
       maven
+      udis86
 
 
 # Media
