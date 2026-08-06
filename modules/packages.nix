@@ -91,7 +91,6 @@
       python3Packages.dbus-python
       imagemagick
       maven
-      udis86
 
 
 # Media
