@@ -81,10 +81,10 @@
       };
       dashboard.mediaUpdateInterval = 1000;
       bar = {
-        status = {
+        
           showBattery = hostSettings.showBattery;
           showMicrophone = true;
-        };
+        
         workspaces = {
           activeIndicator = true;
           perMonitorWorkspaces = false;
