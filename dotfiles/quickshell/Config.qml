@@ -210,14 +210,14 @@ Singleton {
                 iconSubs: bar.tray.iconSubs
             },
             status: {
-                showAudio: bar.status.showAudio,
-                showMicrophone: bar.status.showMicrophone,
-                showKbLayout: bar.status.showKbLayout,
-                showNetwork: bar.status.showNetwork,
-                showWifi: bar.status.showWifi,
-                showBluetooth: bar.status.showBluetooth,
-                showBattery: bar.status.showBattery,
-                showLockStatus: bar.status.showLockStatus
+                showAudio: bar.showAudio,
+                showMicrophone: bar.showMicrophone,
+                showKbLayout: bar.showKbLayout,
+                showNetwork: bar.showNetwork,
+                showWifi: bar.showWifi,
+                showBluetooth: bar.showBluetooth,
+                showBattery: bar.showBattery,
+                showLockStatus: bar.showLockStatus
             },
             clock: {
                 showIcon: bar.clock.showIcon
