@@ -80,7 +80,8 @@
         expire = true;
       };
       dashboard.mediaUpdateInterval = 1000;
-      bar.statusIcons = [
+      bar = {
+        statusIcons = [
           { id = "battery"; enabled = hostSettings.showBattery; }
           { id = "microphone"; enabled = true; }
         ];
@@ -89,6 +90,7 @@
           perMonitorWorkspaces = false;
         };
         clock.showDate = true;
+      };
       launcher = {
         maxWallpapers = 9;
         };
