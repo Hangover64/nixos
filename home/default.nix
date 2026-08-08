@@ -83,7 +83,9 @@
       bar = {
         statusIcons = [
           { id = "battery"; enabled = hostSettings.showBattery; }
+          { id = "wifi"; enabled = true; }
           { id = "microphone"; enabled = true; }
+          { id = "speaker"; enabled = true; }
         ];
         workspaces = {
           activeIndicator = true;
