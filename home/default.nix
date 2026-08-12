@@ -166,6 +166,7 @@
     jetbrains.ruby-mine
     jetbrains.webstorm
     jetbrains.clion
+    jetbrains-toolbox
 
     #cli
     ani-cli
