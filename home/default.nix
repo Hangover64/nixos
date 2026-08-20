@@ -154,6 +154,7 @@
     wireshark
     brave
     telegram-desktop
+    rclone
     #winboat
 
     # Misc
