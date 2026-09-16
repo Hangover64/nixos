@@ -132,6 +132,7 @@
   home.packages = with pkgs; [
     # GUI Apps
     okteta
+    freecad
     proton-pass
     protonmail-desktop
     obsidian
