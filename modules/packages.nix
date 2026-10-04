@@ -94,7 +94,6 @@
 
 
 # Media
-      smplayer
       mpv
       cava
       cmatrix
