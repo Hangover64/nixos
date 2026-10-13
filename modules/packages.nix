@@ -94,7 +94,6 @@
       gptfdisk
       xfsprogs
       python3
-      dbus-python
       imagemagick
       maven
 
