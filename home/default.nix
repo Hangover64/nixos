@@ -20,6 +20,7 @@
     enable = true;
     interactiveShellInit = ''
       starship init fish | source
+      zoxide init fish | source
       fish_config theme choose "Dracula Official"
       function fish_right_prompt
         mommy -1 -s $status
@@ -132,7 +133,6 @@
   home.packages = with pkgs; [
     # GUI Apps
     okteta
-    freecad
     proton-pass
     protonmail-desktop
     obsidian
@@ -168,7 +168,6 @@
     jetbrains.ruby-mine
     jetbrains.webstorm
     jetbrains.clion
-    jetbrains-toolbox
 
     #cli
     ani-cli
@@ -184,7 +183,7 @@
     shadowsocks-rust
     cava
     rpi-imager
-
+    antigravity-cli
     #Developement
     android-tools
     scrcpy
