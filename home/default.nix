@@ -17,9 +17,15 @@
   };
   programs.fish = {
     enable = true;
+    shellAliases = {
+      ls = "eza";
+      ll = "eza -l";
+      la = "eza -la";
+      z = "cd";
+    };
     interactiveShellInit = ''
       starship init fish | source
-      zoxide init fish | source
+      zoxide init fish --cmd cd | source
       fish_config theme choose "Dracula Official"
       '';
     functions = {
