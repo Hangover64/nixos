@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.firefox.enable = true;
   programs.steam = {
@@ -13,7 +13,18 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
+    config = {
+      common = {
+        default = [ "gtk" ];
+      };
+      hyprland = {
+        default = [ "hyprland" "gtk" ];
+      };
+    };
   };
+
+  # Prevent xdg-desktop-portal from failing if graphical-session.target is not reached immediately
+  systemd.user.services.xdg-desktop-portal.unitConfig.Requisite = lib.mkForce "";
 
   services.hydra = {
     enable = true;
