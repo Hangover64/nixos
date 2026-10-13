@@ -33,7 +33,7 @@ end
 -- =============================================================================
 hl.on("hyprland.start", function()
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY && systemctl --user start nixos-fake-graphical-session.target")
-    hl.exec_cmd("caelestia-shell & hypridle")
+    hl.exec_cmd("hypridle")
     hl.exec_cmd("sleep 5m && ~/nixos/wallpaper.sh")
     if hostname == "nixos-desktop" then 
       hl.exec_cmd("~/Scripts/interfaceStartup.sh")
