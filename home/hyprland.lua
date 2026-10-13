@@ -32,7 +32,7 @@ end
 -- Autostart
 -- =============================================================================
 hl.on("hyprland.start", function()
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY && systemctl --user start nixos-fake-graphical-session.target")
+    hl.exec_cmd("dbus-update-activation-environment --systemd --all WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE DISPLAY && systemctl --user start nixos-fake-graphical-session.target")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("sleep 5m && ~/nixos/wallpaper.sh")
     if hostname == "nixos-desktop" then 
@@ -48,6 +48,8 @@ end)
 -- Environment Variables
 -- =============================================================================
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("NIXOS_OZONE_WL", "1")
 
 -- =============================================================================
 -- General Config
@@ -113,6 +115,10 @@ hl.config({
         touchpad = {
             natural_scroll = false,
         },
+    },
+
+    xwayland = {
+        force_zero_scaling = true,
     },
 })
 

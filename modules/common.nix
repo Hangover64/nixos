@@ -31,6 +31,7 @@
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     NIXOS_OZONE_WL = "1";
     QT_QPA_PLATFORM = "wayland;xcb";
+    XDG_SESSION_TYPE = "wayland";
   };
 
   users.users.hendrikf = {
