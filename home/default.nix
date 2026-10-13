@@ -154,7 +154,12 @@
     insomnia
     localsend
     qbittorrent
-    brave
+    (brave.override {
+      commandLineArgs = [
+        "--ozone-platform=wayland"
+        "--disable-features=WaylandFractionalScaleV1,OutdatedBuildDetector,UseChromeOSDirectVideoDecoder"
+      ];
+    })
     telegram-desktop
     rclone
     #winboat

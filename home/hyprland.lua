@@ -116,10 +116,6 @@ hl.config({
             natural_scroll = false,
         },
     },
-
-    xwayland = {
-        force_zero_scaling = true,
-    },
 })
 
 -- Per-device config
