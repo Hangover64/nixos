@@ -7,7 +7,6 @@
 local mod         = "SUPER"
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu        = "wofi --show drun"
 
 
 local function get_hostname()

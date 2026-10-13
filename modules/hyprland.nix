@@ -8,12 +8,10 @@
   environment.systemPackages = with pkgs; [
       hyprpaper
       hyprshot
-      hyprlock
       hypridle
       brightnessctl
       hyprpicker
       playerctl
-      swaynotificationcenter
   ];
 
   environment.variables = {

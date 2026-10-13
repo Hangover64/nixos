@@ -34,7 +34,6 @@
 # CLI tools
       usbutils
       evtest
-      wofi
       ncdu
       wget
       tmux
@@ -47,10 +46,6 @@
       upower
       just
       pstree
-      zip
-      unzip
-      diffutils
-      ffmpeg
       acpi
       gpu-screen-recorder
       gpu-screen-recorder-gtk
@@ -95,11 +90,9 @@
 
 # Media
       mpv
-      cava
       cmatrix
 
 # Hyprland extras
-      quickshell
       dbus
 
 # Caelestia

@@ -6,7 +6,6 @@
   imports = [
     inputs.caelestia-shell.homeManagerModules.default
     ./hyprland.nix
-    ./hypr-extras.nix
   ];
 
   # Shell
@@ -22,9 +21,6 @@
       starship init fish | source
       zoxide init fish | source
       fish_config theme choose "Dracula Official"
-      function fish_right_prompt
-        mommy -1 -s $status
-        end
       '';
     functions = {
       fish_right_prompt = {
@@ -152,7 +148,6 @@
     insomnia
     localsend
     qbittorrent
-    wireshark
     brave
     telegram-desktop
     rclone
