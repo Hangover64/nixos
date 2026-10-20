@@ -9,10 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    /*caelestia-cli = {
+    caelestia-cli = {
       url = "github:caelestia-dots/cli";
       inputs.nixpkgs.follows = "nixpkgs";
-    };*/
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
