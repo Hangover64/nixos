@@ -100,6 +100,9 @@
       launcher = {
         maxWallpapers = 9;
         };
+        services = {
+          brightnessIncrement = 0.05;
+        };
     };
       cli = {
         enable = true;
