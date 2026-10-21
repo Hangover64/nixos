@@ -2,10 +2,8 @@
   "nodes": {
     "caelestia-cli": {
       "inputs": {
-        "caelestia-shell": "caelestia-shell",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "caelestia-shell": [],
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
         "lastModified": 1792556705,
@@ -21,30 +19,6 @@
         "type": "github"
       }
     },
-    "caelestia-cli_2": {
-      "inputs": {
-        "caelestia-shell": [
-          "caelestia-shell"
-        ],
-        "nixpkgs": [
-          "caelestia-shell",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1792255116,
-        "narHash": "sha256-eG+ssQCNLOBbqK8zKaQ77Qv/Yoq1bzazuZtHPgCTxNg=",
-        "owner": "caelestia-dots",
-        "repo": "cli",
-        "rev": "287802be3fbdbb81c8234587f9ccdd667505f6f9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "caelestia-dots",
-        "repo": "cli",
-        "type": "github"
-      }
-    },
     "caelestia-shell": {
       "inputs": {
         "caelestia-cli": [
@@ -52,33 +26,9 @@
         ],
         "m3shapes": "m3shapes",
         "nixpkgs": [
-          "caelestia-cli",
           "nixpkgs"
         ],
         "quickshell": "quickshell"
-      },
-      "locked": {
-        "lastModified": 1792507819,
-        "narHash": "sha256-7ZdS2iVqBoXrVqDNIQYwhiZEpr+bemPfVqtYfWZQPUg=",
-        "owner": "caelestia-dots",
-        "repo": "shell",
-        "rev": "6c70d5cb0cbf31413d300699540c858ad28c1539",
-        "type": "github"
-      },
-      "original": {
-        "owner": "caelestia-dots",
-        "repo": "shell",
-        "type": "github"
-      }
-    },
-    "caelestia-shell_2": {
-      "inputs": {
-        "caelestia-cli": "caelestia-cli_2",
-        "m3shapes": "m3shapes_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "quickshell": "quickshell_2"
       },
       "locked": {
         "lastModified": 1792559102,
@@ -174,29 +124,6 @@
       }
     },
     "m3shapes": {
-      "inputs": {
-        "nixpkgs": [
-          "caelestia-cli",
-          "caelestia-shell",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1787906858,
-        "narHash": "sha256-YZelgEZflFNwGutX4/tIzBdbOeghJgE2oDw0uWYGxns=",
-        "owner": "soramanew",
-        "repo": "m3shapes",
-        "rev": "32ad9ce328bb77ed349b40a3be10ee9ea610b8ab",
-        "type": "github"
-      },
-      "original": {
-        "owner": "soramanew",
-        "repo": "m3shapes",
-        "rev": "32ad9ce328bb77ed349b40a3be10ee9ea610b8ab",
-        "type": "github"
-      }
-    },
-    "m3shapes_2": {
       "inputs": {
         "nixpkgs": [
           "caelestia-shell",
@@ -299,29 +226,23 @@
         "type": "github"
       }
     },
-    "quickshell": {
-      "inputs": {
-        "nixpkgs": [
-          "caelestia-cli",
-          "caelestia-shell",
-          "nixpkgs"
-        ]
-      },
+    "nixpkgs_2": {
       "locked": {
-        "lastModified": 1792214446,
-        "narHash": "sha256-tq6x6CRG8Qikrjri59tzu9+b2gri8TjnShkGeh8kUgQ=",
-        "ref": "refs/heads/master",
-        "rev": "2b4501a282689792b62e94f3fb30d8f512324fe6",
-        "revCount": 875,
-        "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
+        "lastModified": 1792502884,
+        "narHash": "sha256-IoNisKcGbUjdd45qCqywGMCYmZ5EnkxezvLII0FWwNA=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "02c087f3fe673c9e317f206a627cb6b910336dbe",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
-    "quickshell_2": {
+    "quickshell": {
       "inputs": {
         "nixpkgs": [
           "caelestia-shell",
@@ -345,10 +266,10 @@
     "root": {
       "inputs": {
         "caelestia-cli": "caelestia-cli",
-        "caelestia-shell": "caelestia-shell_2",
+        "caelestia-shell": "caelestia-shell",
         "home-manager": "home-manager",
         "nix-citizen": "nix-citizen",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "treefmt-nix": {
