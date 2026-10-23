@@ -139,6 +139,7 @@
     # GUI Apps
     okteta
     proton-pass
+    wxmaxima
     protonmail-desktop
     obsidian
     spotify
