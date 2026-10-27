@@ -77,7 +77,6 @@
       
 
 # Terminal
-      foot
 
 # Development
       gcc
@@ -86,7 +85,6 @@
       clang-tools
       libclang
       rustup
-      claude-code
       lmstudio
       nodejs
       nix-ld
