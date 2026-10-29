@@ -93,6 +93,7 @@
       python3
       imagemagick
       maven
+      umlet
 
 
 # Media
