@@ -43,6 +43,17 @@ in
     libfprint-egismoc-sdcp
   ];
 
+  # Allow wheel users to enroll/delete their own fingerprints without needing sudo or a Polkit GUI agent
+  security.polkit.extraConfig = ''
+    polkit.addRule(function(action, subject) {
+      if ((action.id == "net.reactivated.fprint.device.enroll" ||
+           action.id == "net.reactivated.fprint.device.verify") &&
+          subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+      }
+    });
+  '';
+
   environment.systemPackages = with pkgs; [
     intel-media-driver
   ];
