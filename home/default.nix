@@ -178,6 +178,7 @@
     jetbrains.ruby-mine
     jetbrains.webstorm
     jetbrains.clion
+    jetbrains.goland
 
     #cli
     ani-cli
