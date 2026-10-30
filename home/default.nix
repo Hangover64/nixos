@@ -6,7 +6,6 @@
   imports = [
     inputs.caelestia-shell.homeManagerModules.default
     ./hyprland.nix
-    ./hypr-extras.nix
   ];
 
   # Shell
@@ -18,12 +17,16 @@
   };
   programs.fish = {
     enable = true;
+    shellAliases = {
+      ls = "eza";
+      ll = "eza -l";
+      la = "eza -la";
+      z = "cd";
+    };
     interactiveShellInit = ''
       starship init fish | source
+      zoxide init fish --cmd cd | source
       fish_config theme choose "Dracula Official"
-      function fish_right_prompt
-        mommy -1 -s $status
-        end
       '';
     functions = {
       fish_right_prompt = {
@@ -97,6 +100,9 @@
       launcher = {
         maxWallpapers = 9;
         };
+        services = {
+          brightnessIncrement = 0.05;
+        };
     };
       cli = {
         enable = true;
@@ -132,8 +138,8 @@
   home.packages = with pkgs; [
     # GUI Apps
     okteta
-    freecad
     proton-pass
+    wxmaxima
     protonmail-desktop
     obsidian
     spotify
@@ -152,8 +158,12 @@
     insomnia
     localsend
     qbittorrent
-    wireshark
-    brave
+    (brave.override {
+      commandLineArgs = [
+        "--ozone-platform=wayland"
+        "--disable-features=WaylandFractionalScaleV1,OutdatedBuildDetector,UseChromeOSDirectVideoDecoder"
+      ];
+    })
     telegram-desktop
     rclone
     #winboat
@@ -168,7 +178,7 @@
     jetbrains.ruby-mine
     jetbrains.webstorm
     jetbrains.clion
-    jetbrains-toolbox
+    jetbrains.goland
 
     #cli
     ani-cli
@@ -184,7 +194,7 @@
     shadowsocks-rust
     cava
     rpi-imager
-
+    antigravity-cli
     #Developement
     android-tools
     scrcpy

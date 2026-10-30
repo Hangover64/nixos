@@ -7,7 +7,6 @@
 local mod         = "SUPER"
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu        = "wofi --show drun"
 
 
 local function get_hostname()
@@ -33,17 +32,24 @@ end
 -- Autostart
 -- =============================================================================
 hl.on("hyprland.start", function()
-    hl.exec_cmd("caelestia-shell & hypridle")
+    hl.exec_cmd("dbus-update-activation-environment --systemd --all && systemctl --user start nixos-fake-graphical-session.target")
+    hl.exec_cmd("hypridle")
     hl.exec_cmd("sleep 5m && ~/nixos/wallpaper.sh")
     if hostname == "nixos-desktop" then 
       hl.exec_cmd("~/Scripts/interfaceStartup.sh")
     end
 end)
 
+hl.on("hyprland.shutdown", function()
+    hl.exec_cmd("systemctl --user stop nixos-fake-graphical-session.target")
+end)
+
 -- =============================================================================
 -- Environment Variables
 -- =============================================================================
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("NIXOS_OZONE_WL", "1")
 
 -- =============================================================================
 -- General Config
@@ -214,8 +220,8 @@ hl.bind("XF86AudioRaiseVolume",  hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT
 hl.bind("XF86AudioLowerVolume",  hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
 hl.bind("XF86AudioMute",         hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute",      hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",   hl.dsp.global("caelestia:brightnessUp"),                           { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.global("caelestia:brightnessDown"),                         { locked = true, repeating = true })
 
 -- Media keys (locked, no repeat)
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })

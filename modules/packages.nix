@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.firefox.enable = true;
   programs.steam = {
@@ -11,9 +11,19 @@
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
     ];
+    config = {
+      common = {
+        default = [ "gtk" ];
+      };
+      hyprland = {
+        default = [ "hyprland" "gtk" ];
+      };
+    };
   };
+
+  # Prevent xdg-desktop-portal from failing if graphical-session.target is not reached immediately
+  systemd.user.services.xdg-desktop-portal.unitConfig.Requisite = lib.mkForce "";
 
   services.hydra = {
     enable = true;
@@ -34,7 +44,6 @@
 # CLI tools
       usbutils
       evtest
-      wofi
       ncdu
       wget
       tmux
@@ -47,10 +56,6 @@
       upower
       just
       pstree
-      zip
-      unzip
-      diffutils
-      ffmpeg
       acpi
       gpu-screen-recorder
       gpu-screen-recorder-gtk
@@ -72,7 +77,6 @@
       
 
 # Terminal
-      foot
 
 # Development
       gcc
@@ -81,7 +85,6 @@
       clang-tools
       libclang
       rustup
-      claude-code
       lmstudio
       nodejs
       nix-ld
@@ -89,18 +92,16 @@
       gptfdisk
       xfsprogs
       python3
-      python3Packages.dbus-python
       imagemagick
       maven
+      umlet
 
 
 # Media
       mpv
-      cava
       cmatrix
 
 # Hyprland extras
-      quickshell
       dbus
 
 # Caelestia

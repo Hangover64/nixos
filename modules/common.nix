@@ -31,6 +31,7 @@
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     NIXOS_OZONE_WL = "1";
     QT_QPA_PLATFORM = "wayland;xcb";
+    XDG_SESSION_TYPE = "wayland";
   };
 
   users.users.hendrikf = {
@@ -74,19 +75,19 @@
   services.wivrn = {
     enable = true;
     openFirewall = true;
-    autoStart = true;
+    autoStart = false;
   };
 
   services.avahi = {
     enable = true;
   };
 
-  security.wrappers.vrcompositor-launcher = {
+  /*security.wrappers.vrcompositor-launcher = {
     source = "/home/hendrikf/.local/share/Steam/steamapps/common/SteamVR/bin/linux64/vrcompositor-launcher";
     capabilities = "cap_sys_nice+eip";
     owner = "root";
     group = "root";
-  };
+  };*/
 
 #endofVR
 
