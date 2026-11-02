@@ -44,6 +44,19 @@
         "type": "github"
       }
     },
+    "creds": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793621708,
+        "narHash": "sha256-T+8bxd9sHbEV762sTaoeoBaDXitEKCjVH3+Q/2CIuSU=",
+        "path": "/home/hendrikf/Documents/nixos-secrets",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/hendrikf/Documents/nixos-secrets",
+        "type": "path"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -267,6 +280,7 @@
       "inputs": {
         "caelestia-cli": "caelestia-cli",
         "caelestia-shell": "caelestia-shell",
+        "creds": "creds",
         "home-manager": "home-manager",
         "nix-citizen": "nix-citizen",
         "nixpkgs": "nixpkgs_2"
