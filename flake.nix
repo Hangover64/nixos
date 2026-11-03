@@ -24,9 +24,14 @@
       url = "github:LovingMelody/nix-citizen";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    creds = {
+      url = "path:/home/hendrikf/Documents/nixos-secrets";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, caelestia-shell, ... }@inputs:
+  outputs = { self, nixpkgs, caelestia-shell, creds, ... }@inputs:
     let
     commonModules = [
       ./modules
@@ -38,6 +43,7 @@
       desktop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
+          inherit creds;
           hostSettings = {
             hostname = "nixos-desktop";
             showBattery = false;
@@ -49,6 +55,7 @@
       laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
+          inherit creds;
           hostSettings = {
             hostname = "nixos-laptop";
             showBattery = true;

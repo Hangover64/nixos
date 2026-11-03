@@ -68,6 +68,7 @@
       yazi
       ueberzugpp
       protontricks
+      smplayer
 
 #Hardware
       coolercontrol.coolercontrold

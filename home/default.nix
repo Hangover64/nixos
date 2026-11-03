@@ -1,4 +1,7 @@
 { config, pkgs, inputs, hostSettings, ... }:
+let
+  creds = import (inputs.creds + "/factorio.nix");
+in
 {
   home.username = "hendrikf";
   home.homeDirectory = "/home/hendrikf";
@@ -171,6 +174,10 @@
     # Misc
     steamcmd
     antigravity-ide
+    (factorio-space-age.override {
+      username = creds.username;
+      token = creds.token;
+    })
 
     #Jetbrains
     jetbrains.idea
