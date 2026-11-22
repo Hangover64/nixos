@@ -47,8 +47,8 @@
     "creds": {
       "flake": false,
       "locked": {
-        "lastModified": 1794894515,
-        "narHash": "sha256-4zEsmMsdROIxN0i5YQVrc81u03jpZ7sDebpYiTiMmjw=",
+        "lastModified": 1795391638,
+        "narHash": "sha256-E/VlS6HMz7Bm8E2IGkaEvH4P1XMyvuWvWPHcP5rolaQ=",
         "path": "/home/hendrikf/Documents/nixos-secrets",
         "type": "path"
       },
