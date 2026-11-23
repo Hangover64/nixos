@@ -146,6 +146,7 @@ in
     wxmaxima
     proton-drive-cli
     protonmail-desktop
+    gws
     obsidian
     spotify
     discord
