@@ -144,6 +144,7 @@ in
     stellarium
     proton-pass
     wxmaxima
+    proton-drive-cli
     protonmail-desktop
     obsidian
     spotify
