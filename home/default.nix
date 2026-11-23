@@ -141,6 +141,7 @@ in
   home.packages = with pkgs; [
     # GUI Apps
     okteta
+    stellarium
     proton-pass
     wxmaxima
     protonmail-desktop
