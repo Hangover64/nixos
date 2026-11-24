@@ -181,6 +181,9 @@ in
       username = creds.username;
       token = creds.token;
     })
+    atanks
+    heroic-unwrapped
+    freeciv_qt
 
     #Jetbrains
     jetbrains.idea
