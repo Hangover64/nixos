@@ -184,6 +184,7 @@ in
     atanks
     heroic-unwrapped
     freeciv_qt
+    wayland-bongocat
 
     #Jetbrains
     jetbrains.idea
