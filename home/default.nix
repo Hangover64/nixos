@@ -172,6 +172,7 @@ in
     })
     telegram-desktop
     rclone
+    wireshark
     #winboat
 
     # Misc
